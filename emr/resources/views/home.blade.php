@@ -5,9 +5,11 @@ use App\Models\Patient;
     use Illuminate\Support\Carbon;
     $code = $_GET['code'];    
     $date = Carbon::now();
-    $emr_expiry_date = $date->addMonths(3);    
+    $emr_expiry_date = $date->addMonths(3);      
     $fitbit_authorization_link = "https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=238ZZB&scope=activity+cardio_fitness+electrocardiogram+heartrate+nutrition+oxygen_saturation+respiratory_rate+sleep+social+temperature+weight&code_challenge=8_b0QCASCO_nhvaKMqph4kSmGeou48hfW5EdbjPi0EU&code_challenge_method=S256&state=481i1j0i2k3p711s0p0m14015n093a18";                
 ?>
+
+
 @extends('layouts.app')
 @section('content')
 <div style="display: none;" id="cardx">
