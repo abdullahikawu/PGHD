@@ -13,6 +13,9 @@ use App\Models\Patient;
 @extends('layouts.app')
 @section('content')
 <div style="display: none;" id="cardx">
+
+
+
     <div class="d-flex  justify-content-center align-items-center flex-column">
         <img src="/pix/success.png" width="70px">        
         <div class="alert alert-success my-3" style="font-size: 1em;">
