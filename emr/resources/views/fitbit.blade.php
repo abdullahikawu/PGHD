@@ -4,41 +4,23 @@
 use App\Models\Organization;
 use App\Models\Patient;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
-    $patient = Patient::find(6);//loops all patients
-    $org = Organization::find(1);
-    $auth_encode = base64_encode($org->client_id.':'.$org->secrete_key);
-    $code = $_GET['code'];    
-    $redirect_uri = "http://localhost:8000/home";
-   $client =  new Client();
-   $res = $client->request('POST', "https://emr.vlabnigeria.org/oauth2/default/token", [
-    'form_params' =>[
-        "grant_type"=>"authorization_code",
-        "client_id"=>$org->client_id,
-        "redirect_uri"=>$redirect_uri,
-        "code"=>$patient->emr_code
-    ],
-    'auth' => ['username', 'password']
-]);
-dd($res);
-    $response = Http::withHeaders([
-        "Content-Type"=>"application/x-www-form-urlencoded",
-        "Authorization"=>"Basic $auth_encode"
-    ])->post("https://emr.vlabnigeria.org/oauth2/default/token",[
-        "grant_type"=>"authorization_code",
-        "client_id"=>$org->client_id,
-        "redirect_uri"=>$redirect_uri,
-        "code"=>$patient->emr_code
-    ])->json();    
-    echo json_encode($response);    
-    dd(
-    //    [ "Authorization"=>"Basic ".str_replace('=','',$auth_encode)],
-        ["grant_type"=>"authorization_code",
-        "client_id"=>$org->client_id,
-        "redirect_uri"=>$redirect_uri,
-        "code"=>$patient->emr_code]
-    );
+$code = $_GET['code'];
+$emr_pid = session('emr_pid');
+//echo $emr_pid;
+$client_id = env('FITBIT_CLIENT_ID');
+$secrete_key = env('FITBIT_CLIENT_SECRET');
+$patient = Patient::where('emr_pid',$emr_pid)->first();//loops all patients              
+$data = [
+    "code"=>$code,
+    "client_id"=>$client_id,
+    "grant_type"=>"authorization_code",
+    "code_verifier"=>$patient->emr->code_challenge,    
+]; 
 
+$response = processAccessToken("https://api.fitbit.com/oauth2/token",$data,$patient->emr->code_challenge,$client_id,$secrete_key,$patient->organization_id,'fibit');
+echo json_encode($data);
 ?>
 @extends('layouts.app')
 @section('content')

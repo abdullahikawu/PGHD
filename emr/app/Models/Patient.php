@@ -9,15 +9,24 @@ class Patient extends Model
 {
     use HasFactory;
     protected $fillable = [
-        "pid",
+        "pid",        
         "organization_id",
         "emr_pid",
-        "fitbit_code",
-        "emr_code",
-        "fitbit_access_token",
         "emr_expiry_date",
         "email",
         "password",
         "meta"
     ];
+
+    public function getEmrAttribute()
+    {
+        return Apis::where(['pid'=>$this->id, 'name'=>'emr'])->first();
+    }
+
+    public function getFitbitAttribute()
+    {
+        return Apis::where(['pid'=>$this->id, 'name'=>'fitbit'])->first();
+    }
+
+    protected $appends = ['fitbit'];
 }
