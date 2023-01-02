@@ -4,5 +4,10 @@
         "apis"=>[
             "emr_auth_url"=>"https://emr.vlabnigeria.org/oauth2/default/token",
             "fitbit_auth_url"=>"https://api.fitbit.com/oauth2/token",
+            "fibit"=>[
+                "sleep"=>"",
+                "heart_rate"=>"",
+                "blood_pressure"=>""
+            ]
         ]
     ];
