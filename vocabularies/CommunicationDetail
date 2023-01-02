@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<body>
+This refers to the Information about Medium of PGHD Communication and User Information
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
-
-</body>
-</html>
+It has field like:
+PatientID: 	Patient or Client ID
+DataCollectedViaIVR: Was this PGHD data collected using the Interactive Voice Response service? [Yes/No]
