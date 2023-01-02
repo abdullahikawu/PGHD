@@ -18,6 +18,9 @@ return new class extends Migration
             $table->string("name");
             $table->string("client_id");
             $table->string("secrete_key");
+            $table->string("base_url");            
+            $table->integer("token_life_time")->default(2);
+            $table->enum('life_time_type',["years","months","weeks", "days"])->default("weeks");
             $table->timestamps();
         });
     }

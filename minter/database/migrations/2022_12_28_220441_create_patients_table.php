@@ -14,13 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('patients', function (Blueprint $table) {
-            $table->id();
-            $table->string("pid");
-            $table->string("emr_pid")->nullable();
-            $table->string("emr_code", 1000)->nullable();
-            $table->string("fitbit_code", 1000)->nullable();
-            $table->string("fitbit_access_token", 1000)->nullable();
-            $table->string("emr_expiry_date")->nullable();
+            $table->id();            
+            $table->integer("organization_id");
+            $table->string("emr_pid")->nullable();            
             $table->string("email")->nullable();
             $table->string("password")->nullable();
             $table->longText("meta")->nullable();
