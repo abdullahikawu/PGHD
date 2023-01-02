@@ -18,6 +18,10 @@ class Patient extends Model
         "meta"
     ];
 
+    public function organization(){
+        return $this->belongsTo(Organization::class);
+    }
+
     public function getEmrAttribute()
     {
         return Apis::where(['pid'=>$this->id, 'name'=>'emr'])->first();
@@ -28,5 +32,5 @@ class Patient extends Model
         return Apis::where(['pid'=>$this->id, 'name'=>'fitbit'])->first();
     }
 
-    protected $appends = ['fitbit'];
+    protected $appends = ['fitbit','emr'];
 }
