@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Organization;
+use App\Models\CustomerData;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
-class OrganizationController extends Controller
+
+class ApplicationDataController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +14,7 @@ class OrganizationController extends Controller
      */
     public function index()
     {
-
-        //in function
-        $uuid = Str::uuid()->toString();
-
+        //
     }
 
     /**
@@ -44,10 +41,10 @@ class OrganizationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Organization  $organization
+     * @param  \App\Models\CustomerData  $customerData
      * @return \Illuminate\Http\Response
      */
-    public function show(Organization $organization)
+    public function show(CustomerData $customerData)
     {
         //
     }
@@ -55,10 +52,10 @@ class OrganizationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Organization  $organization
+     * @param  \App\Models\CustomerData  $customerData
      * @return \Illuminate\Http\Response
      */
-    public function edit(Organization $organization)
+    public function edit(CustomerData $customerData)
     {
         //
     }
@@ -67,10 +64,10 @@ class OrganizationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Organization  $organization
+     * @param  \App\Models\CustomerData  $customerData
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Organization $organization)
+    public function update(Request $request, CustomerData $customerData)
     {
         //
     }
@@ -78,10 +75,10 @@ class OrganizationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Organization  $organization
+     * @param  \App\Models\CustomerData  $customerData
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Organization $organization)
+    public function destroy(CustomerData $customerData)
     {
         //
     }

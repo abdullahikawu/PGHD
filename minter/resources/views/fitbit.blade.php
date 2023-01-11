@@ -10,7 +10,7 @@ $code = $_GET['code'];
 $emr_pid = session('emr_pid');
 //echo $emr_pid;
 $client_id = env('FITBIT_CLIENT_ID');
-$secrete_key = env('FITBIT_SECRETE_KEY');
+$secrete_key = env('FITBIT_CLIENT_SECRET');
 $patient = Patient::where('emr_pid',$emr_pid)->first();//loops all patients              
 $data = [
     "code"=>$code,

@@ -29,9 +29,9 @@ function processAccessToken($baseUrl,$data,$code_challenge,$client_id,$secrete_k
             'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
             'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
         ])->withBasicAuth($client_id,$secrete_key)->asForm()->post($baseUrl,$data);                                                    
-                    
+        
         if($response->status() == 200){
-            $response = $response->json();
+            $response = $response->json();            
             $date = Carbon::now();
             $user_id = "";
             if($apis_name =='emr'){
@@ -43,8 +43,7 @@ function processAccessToken($baseUrl,$data,$code_challenge,$client_id,$secrete_k
                     "emr_pid" => $user_id,
                     "organization_id"=>$organization_id,
                 ];
-            }else{
-                
+            }else{                
                 /* 
                  * @param type $user_id - it represent patient id                *
                  */
@@ -52,8 +51,7 @@ function processAccessToken($baseUrl,$data,$code_challenge,$client_id,$secrete_k
                 $apis_user_id = $response['user_id'];
             }
 
-            $apis_record = [                      
-                "refresh_token_expiry_date"=> $date->addMonths(3),             
+            $apis_record = [                                      
                 "access_token"  => $response['access_token'], 
                 "refresh_token" => $response['refresh_token'],    
                 "access_token_expiry_date" => $date->addSeconds($response['expires_in']),  
@@ -83,11 +81,13 @@ function processAccessToken($baseUrl,$data,$code_challenge,$client_id,$secrete_k
                     DB::table('apis')->insert($apis_record);
                 }           
             }
+            
             Session::put('emr_pid',$user_id);
             return [
                 'code_challenge' => $patient->emr->code_challenge,
                 'error' => false,
-                "message"=>'',              
+                "message"=>'',   
+                "response"=>$response           
             ];
         }else{
             
@@ -105,6 +105,37 @@ function processAccessToken($baseUrl,$data,$code_challenge,$client_id,$secrete_k
             "code_challenge"=>''
         ];        
         //$errorMessage = "Encounter an error2: Please try again";
-    }
+    }    
+}
+
+function fetchData($url,$credentials){
     
+    $response = Http::withOptions([
+        'debug' => fopen('php://stderr', 'w'),        
+    ])->withHeaders([
+        'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+        'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'authorization'=> 'Bearer '.$credentials->access_token
+    ])->get($url);                
+    if($response->status() == 200){
+        return $response->json();
+    }else{
+        return '';
+    }
+}
+
+function postData($url,$data,$credentials){
+    $response = Http::withOptions([
+        'debug' => fopen('php://stderr', 'w'),        
+    ])->withHeaders([
+        'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36',
+        'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'authorization'=> 'Bearer '.$credentials->access_token
+    ])->post($url, $data);       
+    dd($response);         
+    if($response->status() == 200){
+        return $response->json();
+    }else{
+        return '';
+    }
 }

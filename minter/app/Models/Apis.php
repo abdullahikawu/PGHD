@@ -10,11 +10,11 @@ class Apis extends Model
 {
     use HasFactory;
 
-    public function getAccessTokenHasExpiredAttribute()
+    public function getAccessTokenIsActiveAttribute()
     {
-        $now = Carbon::now('Y-m-d H:i:s');
-        return Carbon::parse($this->access_token_expiry_date,'Y-m-d H:i:s')->isBefore($now);
+        $now = Carbon::now();
+        return Carbon::parse($this->access_token_expiry_date)->isAfter($now);
     }
 
-    protected $appends = ['fitbit','emr','access_token_is_active'];
+    protected $appends = ['access_token_is_active'];
 }

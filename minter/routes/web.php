@@ -27,6 +27,7 @@ Route::get('/test_cron_job', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/fetch_tokens', [HomeController::class, 'fetchToken'])->name('homex');
 
 Route::get('/fitbit',  [GeneralController::class,'fitbitRedirect']);
 Route::post('/create_patient', [PatientController::class,'store'])->name('create_patient');
