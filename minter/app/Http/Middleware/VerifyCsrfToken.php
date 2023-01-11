@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        'create_patient','update_patient','https://emr.vlabnigeria.org/oauth2/default/token'
+        'create_patient','update_patient','fetch_tokens','https://emr.vlabnigeria.org/oauth2/default/token'
     ];
 }
