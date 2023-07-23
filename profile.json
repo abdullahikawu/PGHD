@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "my-observation-profile",
+  "url": "http://example.com/fhir/StructureDefinition/my-observation-profile",
+  "version": "1.0.0",
+  "name": "MyObservationProfile",
+  "status": "active",
+  "experimental": true,
+  "publisher": "Your Organization",
+  "date": "2023-07-22",
+  "description": "Custom Observation Profile with additional quality property",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "snapshot": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "sliceName": "quality",
+        "min": 0,
+        "max": "1",
+        "short": "Custom quality property",
+        "definition": "Custom quality property definition",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}
