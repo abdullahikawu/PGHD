@@ -18,10 +18,10 @@ dc:date a owl:AnnotationProperty .
 
 dc:description a owl:AnnotationProperty .
 
-rdfs:comment "RDF - The PGHD Prov Ontology seeks to provide an ontology describing sharing of PGHD with EHRs with provenance"
+rdfs:comment "RDF - The PGHD Prov Ontology seeks to provide an ontology describing sharing of PGHD with EHRs with provenance" .
 
 
-owl:imports <https://www.w3.org/TR/2013/REC-prov-o-20130430/>
+owl:imports <https://www.w3.org/TR/2013/REC-prov-o-20130430/> .
 
 
 pghdprov:PGHDRequestedBy a owl:ObjectProperty ;
@@ -34,7 +34,7 @@ pghdprov:PGHDRequestedBy a owl:ObjectProperty ;
     dc:creator "Abdullahi Abubakar" ;
     dc:title "PGHD-PROV Ontology" ;
     dc:date "2024-05-24"
-    dc:description "The PGHD Prov Ontology seeks to provide an ontology describing sharing of PGHD with EHRs with provenance"
+    dc:description "The PGHD Prov Ontology seeks to provide an ontology describing sharing of PGHD with EHRs with provenance" .
 
 
     mod:createdWith <https://chowlk.linkeddata.es/> .
@@ -43,13 +43,13 @@ prov:ActedonBehalfOf a owl:ObjectProperty ;
     rdfs:label "actedon behalf of" ;
     rdfs:domain pghdprov:PatientRelative ;
     rdfs:range pghdprov:Patient ;
-    rdfs:comment "Acting on behalf describes a relative who is authorized to share a patient data".
+    rdfs:comment "Acting on behalf describes a relative who is authorized to share a patient data" .
 
 prov:IsAStaffOf a owl:ObjectProperty ;
     rdfs:label "is a staff of" ;
     rdfs:domain pghdprov:Practitioner ;
     rdfs:range prov:Organization ;
-    rdfs:comment "Acting on behalf describes a relative who is authorized to share a patient data".
+    rdfs:comment "An employee of an organisation" .
 
 prov:wasAssociatedWith a owl:ObjectProperty ;
     rdfs:label "was associated with" ;
@@ -72,7 +72,7 @@ prov:wasGeneratedBy a owl:ObjectProperty ;
 saref4wear:Wearer a owl:Class ;
     rdfs:label "Wearer" ;
     rdfs:subClassOf prov:Entity ;
-    rdfs:comment "From the SAREF4Wear Ontology".
+    rdfs:comment "From the SAREF4Wear Ontology" .
 
     owl:equivalentClass pghdprov:Patient .
 
