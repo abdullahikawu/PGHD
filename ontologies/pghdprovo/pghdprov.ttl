@@ -21,9 +21,6 @@ dc:description a owl:AnnotationProperty .
 rdfs:comment "RDF - The PGHD Prov Ontology seeks to provide an ontology describing sharing of PGHD with EHRs with provenance" .
 
 
-owl:imports <https://www.w3.org/TR/2013/REC-prov-o-20130430/> .
-
-
 pghdprov:PGHDRequestedBy a owl:ObjectProperty ;
     rdfs:label "p g h d requested by" ;
     rdfs:domain pghdprov:PGHDRequest ;
