@@ -1,0 +1,1472 @@
+<https://w3id.org/pghdprovo/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pghdprovo/> <http://purl.org/dc/elements/1.1/creator> "Abdullahi Abubakar Kawu" .
+<https://w3id.org/pghdprovo/> <http://purl.org/dc/elements/1.1/title> "PGHD-PROVO Ontology" .
+<https://w3id.org/pghdprovo/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/pghdprovo/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#category
+<http://www.w3.org/ns/prov#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#component
+<http://www.w3.org/ns/prov#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#constraints
+<http://www.w3.org/ns/prov#constraints> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#definition
+<http://www.w3.org/ns/prov#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#dm
+<http://www.w3.org/ns/prov#dm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#editorialNote
+<http://www.w3.org/ns/prov#editorialNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#inverse
+<http://www.w3.org/ns/prov#inverse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#n
+<http://www.w3.org/ns/prov#n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/prov#qualifiedForm
+<http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/pghdprovo/otherPropertyNames
+<https://w3id.org/pghdprovo/otherPropertyNames> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/pghdprovo/propertySource
+<https://w3id.org/pghdprovo/propertySource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#actedOnBehalfOf
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#comment> "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/2000/01/rdf-schema#label> "actedOnBehalfOf" .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#inverse> "hadDelegate" .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Delegation> .
+<http://www.w3.org/ns/prov#actedOnBehalfOf> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedDelegation> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+# 
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#comment> "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "used" .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#inverse> "wasUsedBy" .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Usage> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedUsage> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedWith" .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#inverse> "wasAssociateFor" .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Association> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedAssociation> .
+# 
+# http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is the ascribing of an entity to an agent."@en .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#label> "wasAttributedTo" .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#definition> "Attribution is the ascribing of an entity to an agent."@en .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#inverse> "contributed" .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Attribution> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedAttribution> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasAttributedTo> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:genid1 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it." .
+_:genid1 <http://www.w3.org/ns/prov#definition> "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. " .
+# 
+# http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#comment> "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "wasDerivedFrom" .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#component> "derivations" .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#definition> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#inverse> "hadDerivation" .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Derivation> .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedDerivation> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Axiom> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedSource> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedProperty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> .
+_:genid2 <http://www.w3.org/2002/07/owl#annotatedTarget> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+_:genid2 <http://www.w3.org/2000/01/rdf-schema#comment> "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence." .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasInfluencedBy> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasGeneratedBy" .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#inverse> "generated" .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Generation> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#qualifiedGeneration> .
+# 
+# http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/pghdprovo/PGHDRequestedBy
+<https://w3id.org/pghdprovo/PGHDRequestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/PGHDRequestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHDRequest> .
+<https://w3id.org/pghdprovo/PGHDRequestedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pghdprovo/Practitioner> .
+<https://w3id.org/pghdprovo/PGHDRequestedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A object property that declares the prov:agent responsible for the initializing a request for acquiring of patient Health data." .
+<https://w3id.org/pghdprovo/PGHDRequestedBy> <http://www.w3.org/2000/01/rdf-schema#label> "PGHD requested by" .
+# 
+# https://w3id.org/pghdprovo/hasContextualInfo
+<https://w3id.org/pghdprovo/hasContextualInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/hasContextualInfo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/hasContextualInfo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/hasContextualInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Has some contextual information associated to the PGHD" .
+<https://w3id.org/pghdprovo/hasContextualInfo> <http://www.w3.org/2000/01/rdf-schema#label> "Contain Contextual Info" .
+# 
+# https://w3id.org/pghdprovo/hasLevel
+<https://w3id.org/pghdprovo/hasLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/hasLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/hasLevel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/hasLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Record of daily physical Activity levels." .
+<https://w3id.org/pghdprovo/hasLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has level" .
+# 
+# https://w3id.org/pghdprovo/hasSleepStage
+<https://w3id.org/pghdprovo/hasSleepStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/hasSleepStage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/hasSleepStage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/hasSleepStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Record of sleep Stages." .
+<https://w3id.org/pghdprovo/hasSleepStage> <http://www.w3.org/2000/01/rdf-schema#label> "has sleep stage" .
+# 
+# https://w3id.org/pghdprovo/isAStaffOf
+<https://w3id.org/pghdprovo/isAStaffOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/isAStaffOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Practitioner> .
+<https://w3id.org/pghdprovo/isAStaffOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/isAStaffOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows the institution a person works." .
+<https://w3id.org/pghdprovo/isAStaffOf> <http://www.w3.org/2000/01/rdf-schema#label> "is a staff of" .
+# 
+# https://w3id.org/pghdprovo/wasAuthorizedBy
+<https://w3id.org/pghdprovo/wasAuthorizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHDRequest> .
+<https://w3id.org/pghdprovo/wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pghdprovo/Patient> .
+<https://w3id.org/pghdprovo/wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who grant access to data requested." .
+<https://w3id.org/pghdprovo/wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was authorized by" .
+# 
+# https://w3id.org/pghdprovo/wasCollectedBy
+<https://w3id.org/pghdprovo/wasCollectedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pghdprovo/wasCollectedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/wasCollectedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/pghdprovo/wasCollectedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Ascribing a person engaged in the retrieval of health data. This could be the patient themself, a caregiver, a relative, or a friend." .
+<https://w3id.org/pghdprovo/wasCollectedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was collected by" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time at which an activity ended. See also prov:startedAtTime."@en .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of calories burned associated with the\nactivity." .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "endedAtTime" .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedEnd o prov:atTime) rdfs:subPropertyOf prov:endedAtTime."@en .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#End> .
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#atTime> .
+# 
+# http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time at which an entity was completely created and is available for use."@en .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "generatedAtTime" .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#category> "expanded" .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedGeneration o prov:atTime) rdfs:subPropertyOf prov:generatedAtTime."@en .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Generation> .
+<http://www.w3.org/ns/prov#generatedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#atTime> .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The time at which an activity started. See also prov:endedAtTime."@en .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#label> "startedAtTime" .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedStart o prov:atTime) rdfs:subPropertyOf prov:startedAtTime."@en .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Start> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#atTime> .
+# 
+# http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/age> .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2000/01/rdf-schema#comment> "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'." .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2000/01/rdf-schema#label> "birthday" .
+<http://xmlns.com/foaf/0.1/birthday> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+# 
+# http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of this Agent (typically but not necessarily 'male' or 'female')." .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender" .
+<http://xmlns.com/foaf/0.1/gender> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#comment> "The given name of some person." .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://xmlns.com/foaf/0.1/> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "Given name" .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/pghdprovo/activityCalories
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/calories> .
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of calories burned associated with an activity." .
+<https://w3id.org/pghdprovo/activityCalories> <http://www.w3.org/2000/01/rdf-schema#label> "actvity calories" .
+<https://w3id.org/pghdprovo/activityCalories> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/address
+<https://w3id.org/pghdprovo/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/address> <http://www.w3.org/2000/01/rdf-schema#comment> "A standardized representation of the location of a person, business, building, or organization." .
+<https://w3id.org/pghdprovo/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.obolibrary.org/obo/NCIT_C25407" .
+<https://w3id.org/pghdprovo/address> <http://www.w3.org/2000/01/rdf-schema#label> "address" .
+# 
+# https://w3id.org/pghdprovo/appName
+<https://w3id.org/pghdprovo/appName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/appName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Application> .
+<https://w3id.org/pghdprovo/appName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the software application utilised by a patient and practitioner." .
+<https://w3id.org/pghdprovo/appName> <http://www.w3.org/2000/01/rdf-schema#label> "app name" .
+# 
+# https://w3id.org/pghdprovo/asleepDuration
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/total_sleep_time> .
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of the sleep." .
+<https://w3id.org/pghdprovo/asleepDuration> <http://www.w3.org/2000/01/rdf-schema#label> "asleep duration" .
+# 
+# https://w3id.org/pghdprovo/bodySite
+<https://w3id.org/pghdprovo/bodySite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/bodySite> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Protocol> .
+<https://w3id.org/pghdprovo/bodySite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/bodySite> <http://www.w3.org/2000/01/rdf-schema#comment> "The part of the body where data is collected or which a device was placed to collect health data." .
+<https://w3id.org/pghdprovo/bodySite> <http://www.w3.org/2000/01/rdf-schema#label> "Body Site" .
+# 
+# https://w3id.org/pghdprovo/calories
+<https://w3id.org/pghdprovo/calories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/calories> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/calories> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of calories burned associated with an activity." .
+<https://w3id.org/pghdprovo/calories> <http://www.w3.org/2000/01/rdf-schema#label> "calories" .
+<https://w3id.org/pghdprovo/calories> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/caloriesOut
+<https://w3id.org/pghdprovo/caloriesOut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/caloriesOut> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/totalCalories> .
+<https://w3id.org/pghdprovo/caloriesOut> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/caloriesOut> <http://www.w3.org/2000/01/rdf-schema#comment> "Total calories burned. Obtained by adding active calories and passive calories" .
+<https://w3id.org/pghdprovo/caloriesOut> <http://www.w3.org/2000/01/rdf-schema#label> "calories out" .
+<https://w3id.org/pghdprovo/caloriesOut> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/dailyActivityProperty
+<https://w3id.org/pghdprovo/dailyActivityProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/pghdprovo/dataSource
+<https://w3id.org/pghdprovo/dataSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/dataSource> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/dataSource> <http://www.w3.org/2000/01/rdf-schema#comment> "An entity that produce a digital data." .
+<https://w3id.org/pghdprovo/dataSource> <http://www.w3.org/2000/01/rdf-schema#label> "data source" .
+# 
+# https://w3id.org/pghdprovo/date
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleepDate> .
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date the sleep was logged." .
+<https://w3id.org/pghdprovo/date> <http://www.w3.org/2000/01/rdf-schema#label> "date" .
+<https://w3id.org/pghdprovo/date> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/dateOfSleep
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleepDate> .
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/2000/01/rdf-schema#comment> "The date the sleep was logged." .
+<https://w3id.org/pghdprovo/dateOfSleep> <http://www.w3.org/2000/01/rdf-schema#label> "date of sleep" .
+<https://w3id.org/pghdprovo/dateOfSleep> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/deepsleepduration
+<https://w3id.org/pghdprovo/deepsleepduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/deepsleepduration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/deepsleepduration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/deepsleepduration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration in deep sleep state." .
+<https://w3id.org/pghdprovo/deepsleepduration> <http://www.w3.org/2000/01/rdf-schema#label> "deepsleepduration" .
+<https://w3id.org/pghdprovo/deepsleepduration> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/description
+<https://w3id.org/pghdprovo/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/description> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHDRequest> .
+<https://w3id.org/pghdprovo/description> <http://www.w3.org/2000/01/rdf-schema#comment> "Provide more information about an activity." .
+<https://w3id.org/pghdprovo/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+# https://w3id.org/pghdprovo/deviceModel
+<https://w3id.org/pghdprovo/deviceModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/deviceModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/pghdprovo/deviceModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/deviceModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A unique number or name given by a device manufacturer to devices that corresponds to a certain characteristics." .
+<https://w3id.org/pghdprovo/deviceModel> <http://www.w3.org/2000/01/rdf-schema#label> "device model" .
+# 
+# https://w3id.org/pghdprovo/deviceName
+<https://w3id.org/pghdprovo/deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core/Device> .
+<https://w3id.org/pghdprovo/deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "A name for a device." .
+<https://w3id.org/pghdprovo/deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name" .
+# 
+# https://w3id.org/pghdprovo/efficiency
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleepEfficiency> .
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A relative measurement of the time spent asleep to the total time spent in bed." .
+<https://w3id.org/pghdprovo/efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "efficiency" .
+<https://w3id.org/pghdprovo/efficiency> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/elevation
+<https://w3id.org/pghdprovo/elevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/elevation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/elevation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/elevation> <http://www.w3.org/2000/01/rdf-schema#comment> "The elevation traveled for the day." .
+<https://w3id.org/pghdprovo/elevation> <http://www.w3.org/2000/01/rdf-schema#label> "elevation" .
+<https://w3id.org/pghdprovo/elevation> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+<https://w3id.org/pghdprovo/elevation> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/endTime
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/enddate> .
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time the sleep log ended." .
+<https://w3id.org/pghdprovo/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "end time" .
+<https://w3id.org/pghdprovo/endTime> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/enddate
+<https://w3id.org/pghdprovo/enddate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/enddate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/enddate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/enddate> <http://www.w3.org/2000/01/rdf-schema#comment> "Time the sleep log ended." .
+<https://w3id.org/pghdprovo/enddate> <http://www.w3.org/2000/01/rdf-schema#label> "end date" .
+<https://w3id.org/pghdprovo/enddate> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/exerciseState
+<https://w3id.org/pghdprovo/exerciseState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/exerciseState> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/State> .
+<https://w3id.org/pghdprovo/exerciseState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/exerciseState> <http://www.w3.org/2000/01/rdf-schema#comment> "exercise state." .
+<https://w3id.org/pghdprovo/exerciseState> <http://www.w3.org/2000/01/rdf-schema#label> "exercise state" .
+# 
+# https://w3id.org/pghdprovo/fairlyActive
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/fairlyActiveMinutes> .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/moderate> .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" .
+<https://w3id.org/pghdprovo/fairlyActive> <http://www.w3.org/2000/01/rdf-schema#label> "fairly active" .
+# 
+# https://w3id.org/pghdprovo/fairlyActiveMinutes
+<https://w3id.org/pghdprovo/fairlyActiveMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/fairlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/fairlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" .
+<https://w3id.org/pghdprovo/fairlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#label> "fairly active minutes" .
+<https://w3id.org/pghdprovo/fairlyActiveMinutes> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/floors
+<https://w3id.org/pghdprovo/floors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/floors> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/floors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/floors> <http://www.w3.org/2000/01/rdf-schema#comment> "The equivalent floors climbed for the day" .
+<https://w3id.org/pghdprovo/floors> <http://www.w3.org/2000/01/rdf-schema#label> "floors" .
+# 
+# https://w3id.org/pghdprovo/intense
+<https://w3id.org/pghdprovo/intense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/intense> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/intense> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." .
+<https://w3id.org/pghdprovo/intense> <http://www.w3.org/2000/01/rdf-schema#label> "intense" .
+<https://w3id.org/pghdprovo/intense> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/light
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/lightsleepduration> .
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration in light sleep state." .
+<https://w3id.org/pghdprovo/light> <http://www.w3.org/2000/01/rdf-schema#label> "light" .
+<https://w3id.org/pghdprovo/light> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/lightlyActive
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/lightlyActiveMinutes> .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/soft> .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" .
+<https://w3id.org/pghdprovo/lightlyActive> <http://www.w3.org/2000/01/rdf-schema#label> "lightly active" .
+# 
+# https://w3id.org/pghdprovo/lightlyActiveMinutes
+<https://w3id.org/pghdprovo/lightlyActiveMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/lightlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/lightlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" .
+<https://w3id.org/pghdprovo/lightlyActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#label> "lightly active minutes" .
+<https://w3id.org/pghdprovo/lightlyActiveMinutes> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/lightsleepduration
+<https://w3id.org/pghdprovo/lightsleepduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/lightsleepduration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/lightsleepduration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/lightsleepduration> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration in light sleep state." .
+<https://w3id.org/pghdprovo/lightsleepduration> <http://www.w3.org/2000/01/rdf-schema#label> "light sleep duration" .
+<https://w3id.org/pghdprovo/lightsleepduration> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/locationOfPatient
+<https://w3id.org/pghdprovo/locationOfPatient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/locationOfPatient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/locationOfPatient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/locationOfPatient> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of a patient during data collection." .
+<https://w3id.org/pghdprovo/locationOfPatient> <http://www.w3.org/2000/01/rdf-schema#label> "location of patient" .
+# 
+# https://w3id.org/pghdprovo/minuteToFallAsleep
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleep_latency> .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <http://www.w3.org/2000/01/rdf-schema#label> "minute to fall asleep" .
+<https://w3id.org/pghdprovo/minuteToFallAsleep> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/minutesAfterWakeup
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/wakeupLatency> .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/2000/01/rdf-schema#comment> "Time spent in bed after waking up." .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <http://www.w3.org/2000/01/rdf-schema#label> "minutes after wakeup" .
+<https://w3id.org/pghdprovo/minutesAfterWakeup> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/moderate
+<https://w3id.org/pghdprovo/moderate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/moderate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/moderate> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" .
+<https://w3id.org/pghdprovo/moderate> <http://www.w3.org/2000/01/rdf-schema#label> "moderate" .
+<https://w3id.org/pghdprovo/moderate> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/orgAddress
+<https://w3id.org/pghdprovo/orgAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/orgAddress> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/pghdprovo/orgAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/orgAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of organisation." .
+<https://w3id.org/pghdprovo/orgAddress> <http://www.w3.org/2000/01/rdf-schema#label> "organization address" .
+# 
+# https://w3id.org/pghdprovo/orgEmail
+<https://w3id.org/pghdprovo/orgEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/orgEmail> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/pghdprovo/orgEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/orgEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Organization email address." .
+<https://w3id.org/pghdprovo/orgEmail> <http://www.w3.org/2000/01/rdf-schema#label> "organization email" .
+# 
+# https://w3id.org/pghdprovo/orgId
+<https://w3id.org/pghdprovo/orgId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/orgId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/pghdprovo/orgId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/orgId> <http://www.w3.org/2000/01/rdf-schema#comment> "An identifier for an organization." .
+<https://w3id.org/pghdprovo/orgId> <http://www.w3.org/2000/01/rdf-schema#label> "organization id" .
+# 
+# https://w3id.org/pghdprovo/orgName
+<https://w3id.org/pghdprovo/orgName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/orgName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/pghdprovo/orgName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/orgName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the organization where a practitioner belongs." .
+<https://w3id.org/pghdprovo/orgName> <http://www.w3.org/2000/01/rdf-schema#label> "organization name" .
+# 
+# https://w3id.org/pghdprovo/phoneNumber
+<https://w3id.org/pghdprovo/phoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/phoneNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/phoneNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Phone contact number." .
+<https://w3id.org/pghdprovo/phoneNumber> <http://www.w3.org/2000/01/rdf-schema#label> "phone number" .
+# 
+# https://w3id.org/pghdprovo/posture
+<https://w3id.org/pghdprovo/posture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/posture> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/State> .
+<https://w3id.org/pghdprovo/posture> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/posture> <http://www.w3.org/2000/01/rdf-schema#comment> "The body position of the patient during data collection." .
+<https://w3id.org/pghdprovo/posture> <http://www.w3.org/2000/01/rdf-schema#label> "posture" .
+# 
+# https://w3id.org/pghdprovo/programmeName
+<https://w3id.org/pghdprovo/programmeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/programmeName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Programme> .
+<https://w3id.org/pghdprovo/programmeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/programmeName> <http://www.w3.org/2000/01/rdf-schema#comment> "The treatment programme associated with the PGHD request." .
+<https://w3id.org/pghdprovo/programmeName> <http://www.w3.org/2000/01/rdf-schema#label> "programme name" .
+# 
+# https://w3id.org/pghdprovo/ratingOrgName
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Rating> .
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes the name of the organization that conducted the rating." .
+<https://w3id.org/pghdprovo/ratingOrgName> <http://www.w3.org/2000/01/rdf-schema#label> "rating organization name" .
+# 
+# https://w3id.org/pghdprovo/ratingScore
+<https://w3id.org/pghdprovo/ratingScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/ratingScore> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Rating> .
+<https://w3id.org/pghdprovo/ratingScore> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://w3id.org/pghdprovo/ratingScore> <http://www.w3.org/2000/01/rdf-schema#comment> "The efficiency rating of an equipement or device by recognized body." .
+<https://w3id.org/pghdprovo/ratingScore> <http://www.w3.org/2000/01/rdf-schema#label> "rating score" .
+# 
+# https://w3id.org/pghdprovo/relationship
+<https://w3id.org/pghdprovo/relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/relationship> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PatientRelative> .
+<https://w3id.org/pghdprovo/relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "shows the relationship of a caregiver, friend, or relative to a patient." .
+<https://w3id.org/pghdprovo/relationship> <http://www.w3.org/2000/01/rdf-schema#label> "relationship" .
+# 
+# https://w3id.org/pghdprovo/rem
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/remsleepduration> .
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/2000/01/rdf-schema#comment> "A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming." .
+<https://w3id.org/pghdprovo/rem> <http://www.w3.org/2000/01/rdf-schema#label> "rem" .
+<https://w3id.org/pghdprovo/rem> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/remsleepduration
+<https://w3id.org/pghdprovo/remsleepduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/remsleepduration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/remsleepduration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/remsleepduration> <http://www.w3.org/2000/01/rdf-schema#comment> "A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming." .
+<https://w3id.org/pghdprovo/remsleepduration> <http://www.w3.org/2000/01/rdf-schema#label> "rem sleep duration" .
+<https://w3id.org/pghdprovo/remsleepduration> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/requestId
+<https://w3id.org/pghdprovo/requestId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/requestId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/PGHDRequest> .
+<https://w3id.org/pghdprovo/requestId> <http://www.w3.org/2000/01/rdf-schema#comment> "Log id for an activity." .
+<https://w3id.org/pghdprovo/requestId> <http://www.w3.org/2000/01/rdf-schema#label> "activity id" .
+# 
+# https://w3id.org/pghdprovo/role
+<https://w3id.org/pghdprovo/role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/role> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Practitioner> .
+<https://w3id.org/pghdprovo/role> <http://www.w3.org/2000/01/rdf-schema#comment> "position or function within an organization" .
+<https://w3id.org/pghdprovo/role> <http://www.w3.org/2000/01/rdf-schema#label> "role" .
+# 
+# https://w3id.org/pghdprovo/sedentary
+<https://w3id.org/pghdprovo/sedentary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sedentary> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/sedentary> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/sedentary> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of sedentary activities. Activities with  a Metabolic Equivalents (MET) value of less than 1.5" .
+<https://w3id.org/pghdprovo/sedentary> <http://www.w3.org/2000/01/rdf-schema#label> "sedentary" .
+# 
+# https://w3id.org/pghdprovo/sleepDate
+<https://w3id.org/pghdprovo/sleepDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleepDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleepDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleepDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The date the sleep was logged." .
+<https://w3id.org/pghdprovo/sleepDate> <http://www.w3.org/2000/01/rdf-schema#label> "sleep date" .
+# 
+# https://w3id.org/pghdprovo/sleepDuration
+<https://w3id.org/pghdprovo/sleepDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleepDuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleepDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleepDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of the sleep." .
+<https://w3id.org/pghdprovo/sleepDuration> <http://www.w3.org/2000/01/rdf-schema#label> "sleep duration" .
+# 
+# https://w3id.org/pghdprovo/sleepEfficiency
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleep_efficiency> .
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A relative measurement of the time spent asleep to the total time spent in bed." .
+<https://w3id.org/pghdprovo/sleepEfficiency> <http://www.w3.org/2000/01/rdf-schema#label> "sleep efficiency" .
+# 
+# https://w3id.org/pghdprovo/sleepLatency
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/sleep_latency> .
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." .
+<https://w3id.org/pghdprovo/sleepLatency> <http://www.w3.org/2000/01/rdf-schema#label> "sleep latency" .
+# 
+# https://w3id.org/pghdprovo/sleepProperty
+<https://w3id.org/pghdprovo/sleepProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/pghdprovo/sleep_efficiency
+<https://w3id.org/pghdprovo/sleep_efficiency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleep_efficiency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleep_efficiency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleep_efficiency> <http://www.w3.org/2000/01/rdf-schema#comment> "A relative measurement of the time spent asleep to the total time spent in bed." .
+<https://w3id.org/pghdprovo/sleep_efficiency> <http://www.w3.org/2000/01/rdf-schema#label> "sleep efficiency" .
+<https://w3id.org/pghdprovo/sleep_efficiency> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/sleep_latency
+<https://w3id.org/pghdprovo/sleep_latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/sleep_latency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/sleep_latency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/sleep_latency> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." .
+<https://w3id.org/pghdprovo/sleep_latency> <http://www.w3.org/2000/01/rdf-schema#label> "sleep latency" .
+<https://w3id.org/pghdprovo/sleep_latency> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/soft
+<https://w3id.org/pghdprovo/soft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/soft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/soft> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" .
+<https://w3id.org/pghdprovo/soft> <http://www.w3.org/2000/01/rdf-schema#label> "soft" .
+# 
+# https://w3id.org/pghdprovo/startTime
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/startdate> .
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time the sleep log begins. Also as \"sleep time\" Measurement of the time at which sleep begins." .
+<https://w3id.org/pghdprovo/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "start time" .
+<https://w3id.org/pghdprovo/startTime> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/startdate
+<https://w3id.org/pghdprovo/startdate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/startdate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/startdate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/startdate> <http://www.w3.org/2000/01/rdf-schema#comment> "Time the sleep log begins. Also as \"sleep time\" Measurement of the time at which sleep begins." .
+<https://w3id.org/pghdprovo/startdate> <http://www.w3.org/2000/01/rdf-schema#label> "start date" .
+<https://w3id.org/pghdprovo/startdate> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/steps
+<https://w3id.org/pghdprovo/steps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/steps> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/steps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/steps> <http://www.w3.org/2000/01/rdf-schema#comment> "Total steps count for the day." .
+<https://w3id.org/pghdprovo/steps> <http://www.w3.org/2000/01/rdf-schema#label> "steps" .
+<https://w3id.org/pghdprovo/steps> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+<https://w3id.org/pghdprovo/steps> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/totalCalories
+<https://w3id.org/pghdprovo/totalCalories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/totalCalories> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/totalCalories> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/totalCalories> <http://www.w3.org/2000/01/rdf-schema#comment> "Total calories burned. Obtained by adding active calories and passive calories" .
+<https://w3id.org/pghdprovo/totalCalories> <http://www.w3.org/2000/01/rdf-schema#label> "total calories" .
+<https://w3id.org/pghdprovo/totalCalories> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/total_sleep_time
+<https://w3id.org/pghdprovo/total_sleep_time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/total_sleep_time> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/total_sleep_time> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/total_sleep_time> <http://www.w3.org/2000/01/rdf-schema#comment> "Length of the sleep." .
+<https://w3id.org/pghdprovo/total_sleep_time> <http://www.w3.org/2000/01/rdf-schema#label> "total sleep time" .
+<https://w3id.org/pghdprovo/total_sleep_time> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/userid
+<https://w3id.org/pghdprovo/userid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/userid> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/userid> <http://www.w3.org/2000/01/rdf-schema#comment> "User identifier." .
+<https://w3id.org/pghdprovo/userid> <http://www.w3.org/2000/01/rdf-schema#label> "user id" .
+# 
+# https://w3id.org/pghdprovo/veryActive
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/veryActiveMinutes> .
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." .
+<https://w3id.org/pghdprovo/veryActive> <http://www.w3.org/2000/01/rdf-schema#label> "very active" .
+# 
+# https://w3id.org/pghdprovo/veryActiveMinutes
+<https://w3id.org/pghdprovo/veryActiveMinutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/veryActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/dailyActivityProperty> .
+<https://w3id.org/pghdprovo/veryActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." .
+<https://w3id.org/pghdprovo/veryActiveMinutes> <http://www.w3.org/2000/01/rdf-schema#label> "very active minutes" .
+<https://w3id.org/pghdprovo/veryActiveMinutes> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/wake
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/wakeupduration> .
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/2000/01/rdf-schema#comment> "A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset." .
+<https://w3id.org/pghdprovo/wake> <http://www.w3.org/2000/01/rdf-schema#label> "wake" .
+<https://w3id.org/pghdprovo/wake> <https://w3id.org/pghdprovo/propertySource> "fitbit" .
+# 
+# https://w3id.org/pghdprovo/wakeupLatency
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/2002/07/owl#equivalentProperty> <https://w3id.org/pghdprovo/wakeup_latency> .
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/2000/01/rdf-schema#comment> "Time spent in bed after waking up." .
+<https://w3id.org/pghdprovo/wakeupLatency> <http://www.w3.org/2000/01/rdf-schema#label> "wakeup latency" .
+# 
+# https://w3id.org/pghdprovo/wakeup_latency
+<https://w3id.org/pghdprovo/wakeup_latency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/wakeup_latency> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/wakeup_latency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/wakeup_latency> <http://www.w3.org/2000/01/rdf-schema#comment> "Time spent in bed after waking up." .
+<https://w3id.org/pghdprovo/wakeup_latency> <http://www.w3.org/2000/01/rdf-schema#label> "wakeup latency" .
+<https://w3id.org/pghdprovo/wakeup_latency> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# https://w3id.org/pghdprovo/wakeupduration
+<https://w3id.org/pghdprovo/wakeupduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/pghdprovo/wakeupduration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/pghdprovo/sleepProperty> .
+<https://w3id.org/pghdprovo/wakeupduration> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/wakeupduration> <http://www.w3.org/2000/01/rdf-schema#comment> "A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset." .
+<https://w3id.org/pghdprovo/wakeupduration> <http://www.w3.org/2000/01/rdf-schema#label> "wake up duration" .
+<https://w3id.org/pghdprovo/wakeupduration> <https://w3id.org/pghdprovo/propertySource> "withings" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity" .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#constraints> "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#definition> "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#definition> "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entity" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#category> "starting-point" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#component> "entities-activities" .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#constraints> "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#definition> "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "@en .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/orgAddress> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/orgEmail> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/orgId> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/orgName> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#category> "expanded" .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#definition> "An organization is a social or legal institution such as a company, society, etc." .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/phoneNumber> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/userid> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/birthday> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/gender> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://xmlns.com/foaf/0.1/givenName> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/address> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/ns/prov#category> "expanded" .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/ns/prov#definition> "Person agents are people."@en .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/prov-o#> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#label> "SoftwareAgent" .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/ns/prov#category> "expanded" .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/ns/prov#component> "agents-responsibility" .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/ns/prov#definition> "A software agent is running software."@en .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# https://saref.etsi.org/core/Device
+<https://saref.etsi.org/core/Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."@en .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://saref.etsi.org/core/> .
+<https://saref.etsi.org/core/Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# https://saref.etsi.org/saref4wear/User
+<https://saref.etsi.org/saref4wear/User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4wear/User> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/pghdprovo/Patient> .
+<https://saref.etsi.org/saref4wear/User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
+<https://saref.etsi.org/saref4wear/User> <http://www.w3.org/2000/01/rdf-schema#comment> "A user is an entity using a wearable."@en .
+<https://saref.etsi.org/saref4wear/User> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
+# 
+# https://saref.etsi.org/saref4wear/Wearable
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core/Device> .
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/deviceModel> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/deviceName> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/2000/01/rdf-schema#comment> "A wearable device is a device that is intended to be located near, on or in an organism."@en .
+<https://saref.etsi.org/saref4wear/Wearable> <http://www.w3.org/2000/01/rdf-schema#label> "Wearable device"@en .
+# 
+# https://w3id.org/pghdprovo/ActivityLevel
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid15 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/fairlyActive> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/lightlyActive> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid17 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/sedentary> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid18 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/veryActive> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Levels: Stages of activity ranging from 0 - 6+ Metabolic Equivalents (MET)" .
+<https://w3id.org/pghdprovo/ActivityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Activity Level" .
+# 
+# https://w3id.org/pghdprovo/Application
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/prov#Person> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAttributedTo> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/appName> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/2000/01/rdf-schema#comment> "A software application is a software that can be directly executed by some processing unit." .
+<https://w3id.org/pghdprovo/Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application" .
+# 
+# https://w3id.org/pghdprovo/ContextualInfo
+<https://w3id.org/pghdprovo/ContextualInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/ContextualInfo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/pghdprovo/ContextualInfo> <http://www.w3.org/2000/01/rdf-schema#label> "contextual information" .
+# 
+# https://w3id.org/pghdprovo/DailyActivity
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/ActivityLevel> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/hasLevel> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/activityCalories> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/elevation> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/floors> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid25 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/steps> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid26 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/totalCalories> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical activities carried out during the day." .
+<https://w3id.org/pghdprovo/DailyActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Daily Activity" .
+# 
+# https://w3id.org/pghdprovo/PGHD
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/saref4wear/Wearable> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasDerivedFrom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/ContextualInfo> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/hasContextualInfo> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/prov#Person> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/wasCollectedBy> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/pghdprovo/Patient> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAttributedTo> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/pghdprovo/PGHDRequest> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/dataSource> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#comment> "Patient Generated Health Data (PGHD) a term referring to data that patients (or their caregivers) collect from home or any location outside the clinical environment." .
+<https://w3id.org/pghdprovo/PGHD> <http://www.w3.org/2000/01/rdf-schema#label> "PGHD" .
+# 
+# https://w3id.org/pghdprovo/PGHDRequest
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/Application> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/Practitioner> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/PGHDRequestedBy> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/pghdprovo/Patient> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/pghdprovo/Patient> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/wasAuthorizedBy> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid37 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#endedAtTime> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid38 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#startedAtTime> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid39 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/requestId> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#comment> "A request made by a practitioner to obtain patient health data generated by wearable device or software application." .
+<https://w3id.org/pghdprovo/PGHDRequest> <http://www.w3.org/2000/01/rdf-schema#label> "PGHD Request" .
+# 
+# https://w3id.org/pghdprovo/Patient
+<https://w3id.org/pghdprovo/Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Patient> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary." .
+<https://w3id.org/pghdprovo/Patient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.obolibrary.org/obo/NCIT_C16960" .
+<https://w3id.org/pghdprovo/Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
+# 
+# https://w3id.org/pghdprovo/PatientRelative
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/Patient> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid41 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/relationship> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/2000/01/rdf-schema#comment> "A Patient relative or friend who helps to collect or transmit data." .
+<https://w3id.org/pghdprovo/PatientRelative> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Relative" .
+# 
+# https://w3id.org/pghdprovo/Practitioner
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Person> .
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/role> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/2000/01/rdf-schema#comment> "A person professionally engaged medical practice who is appointed to a post or duties.\n[Definition Source: NCI]" .
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.obolibrary.org/obo/NCIT_C51846" .
+<https://w3id.org/pghdprovo/Practitioner> <http://www.w3.org/2000/01/rdf-schema#label> "Practitioner" .
+# 
+# https://w3id.org/pghdprovo/Programme
+<https://w3id.org/pghdprovo/Programme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Programme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/Programme> <http://www.w3.org/2000/01/rdf-schema#label> "programme" .
+# 
+# https://w3id.org/pghdprovo/Protocol
+<https://w3id.org/pghdprovo/Protocol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Protocol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/Protocol> <http://www.w3.org/2000/01/rdf-schema#label> "protocol" .
+# 
+# https://w3id.org/pghdprovo/Rating
+<https://w3id.org/pghdprovo/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/Rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating" .
+# 
+# https://w3id.org/pghdprovo/Sleep
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/pghdprovo/SleepStage> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/hasSleepStage> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid44 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/asleepDuration> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid45 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/endTime> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid46 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/sleepDate> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid47 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/sleepDuration> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid48 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/sleepEfficiency> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid49 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/sleepLatency> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid50 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/startTime> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid51 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/wakeupLatency> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#comment> "Data related to user sleep." .
+<https://w3id.org/pghdprovo/Sleep> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep" .
+# 
+# https://w3id.org/pghdprovo/SleepStage
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/deepsleepduration> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/lightsleepduration> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid54 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/remsleepduration> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid55 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/pghdprovo/wakeupduration> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#comment> "Data related to sleep stage." .
+<https://w3id.org/pghdprovo/SleepStage> <http://www.w3.org/2000/01/rdf-schema#label> "Sleep Stage" .
+# 
+# https://w3id.org/pghdprovo/State
+<https://w3id.org/pghdprovo/State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pghdprovo/State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/State> <http://www.w3.org/2000/01/rdf-schema#label> "state" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pghdprovo/ActivityLevel1
+<https://w3id.org/pghdprovo/ActivityLevel1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/ActivityLevel> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Rating1> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/wasCollectedBy> <https://w3id.org/pghdprovo/PatientRelative1> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/fairlyActive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/lightlyActive> "110"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/sedentary> "802"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/ActivityLevel1> <https://w3id.org/pghdprovo/veryActive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/pghdprovo/BloodPressure1
+<https://w3id.org/pghdprovo/BloodPressure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/BloodPressure1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/PGHD> .
+<https://w3id.org/pghdprovo/BloodPressure1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/BloodPressure1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Programme1> .
+# 
+# https://w3id.org/pghdprovo/ContextualDataInfo1
+<https://w3id.org/pghdprovo/ContextualDataInfo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/ContextualDataInfo1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/ContextualInfo> .
+<https://w3id.org/pghdprovo/ContextualDataInfo1> <https://w3id.org/pghdprovo/locationOfPatient> "home" .
+# 
+# https://w3id.org/pghdprovo/DailyActivity1
+<https://w3id.org/pghdprovo/DailyActivity1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/DailyActivity1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/DailyActivity> .
+<https://w3id.org/pghdprovo/DailyActivity1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/pghdprovo/FitbitWearable> .
+<https://w3id.org/pghdprovo/DailyActivity1> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/pghdprovo/PGHDRequest1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/ContextualDataInfo1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Protocol1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Rating1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/hasLevel> <https://w3id.org/pghdprovo/ActivityLevel1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/wasCollectedBy> <https://w3id.org/pghdprovo/PatientRelative1> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/activityCalories> "525"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/dataSource> "Wearable" .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/elevation> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/floors> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/steps> "1698"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/DailyActivity1> <https://w3id.org/pghdprovo/totalCalories> "2628"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/pghdprovo/FitbitWearable
+<https://w3id.org/pghdprovo/FitbitWearable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/FitbitWearable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/saref4wear/Wearable> .
+<https://w3id.org/pghdprovo/FitbitWearable> <https://w3id.org/pghdprovo/deviceModel> "Fitbit Versa 4" .
+<https://w3id.org/pghdprovo/FitbitWearable> <https://w3id.org/pghdprovo/deviceName> "Fitbit" .
+# 
+# https://w3id.org/pghdprovo/Organisation1
+<https://w3id.org/pghdprovo/Organisation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Organisation1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+<https://w3id.org/pghdprovo/Organisation1> <https://w3id.org/pghdprovo/orgAddress> "1 Grangegorman Dublin" .
+<https://w3id.org/pghdprovo/Organisation1> <https://w3id.org/pghdprovo/orgEmail> "tudmedics"@tudublin.ie .
+<https://w3id.org/pghdprovo/Organisation1> <https://w3id.org/pghdprovo/orgId> "01" .
+<https://w3id.org/pghdprovo/Organisation1> <https://w3id.org/pghdprovo/orgName> "TU Dublin Medical Center"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# https://w3id.org/pghdprovo/PGHDRequest1
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/PGHDRequest> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/ns/prov#used> <https://w3id.org/pghdprovo/application1> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/ns/prov#wasAssociatedWith> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <https://w3id.org/pghdprovo/PGHDRequestedBy> <https://w3id.org/pghdprovo/Practitioner1> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <https://w3id.org/pghdprovo/wasAuthorizedBy> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/ns/prov#endedAtTime> "2020-02-20T23:21:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <http://www.w3.org/ns/prov#startedAtTime> "2020-02-20T23:21:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pghdprovo/PGHDRequest1> <https://w3id.org/pghdprovo/description> "A request made by a practitioner to obtain patient data generated by wearable or software application" .
+<https://w3id.org/pghdprovo/PGHDRequest1> <https://w3id.org/pghdprovo/requestId> "89128-192" .
+# 
+# https://w3id.org/pghdprovo/Patient1
+<https://w3id.org/pghdprovo/Patient1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Patient1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Patient> .
+<https://w3id.org/pghdprovo/Patient1> <http://xmlns.com/foaf/0.1/givenName> "Nazif" .
+<https://w3id.org/pghdprovo/Patient1> <https://w3id.org/pghdprovo/address> "1 Adamstown Dublin" .
+<https://w3id.org/pghdprovo/Patient1> <https://w3id.org/pghdprovo/phoneNumber> "+12340000000" .
+<https://w3id.org/pghdprovo/Patient1> <https://w3id.org/pghdprovo/userid> "14" .
+# 
+# https://w3id.org/pghdprovo/PatientRelative1
+<https://w3id.org/pghdprovo/PatientRelative1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/PatientRelative1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/PatientRelative> .
+<https://w3id.org/pghdprovo/PatientRelative1> <http://www.w3.org/ns/prov#actedOnBehalfOf> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/PatientRelative1> <http://xmlns.com/foaf/0.1/givenName> "Adam" .
+<https://w3id.org/pghdprovo/PatientRelative1> <https://w3id.org/pghdprovo/address> "1 Adamstown, Dublin" .
+<https://w3id.org/pghdprovo/PatientRelative1> <https://w3id.org/pghdprovo/phoneNumber> "+567800000000" .
+<https://w3id.org/pghdprovo/PatientRelative1> <https://w3id.org/pghdprovo/relationship> "Sibling" .
+<https://w3id.org/pghdprovo/PatientRelative1> <https://w3id.org/pghdprovo/userid> "13" .
+# 
+# https://w3id.org/pghdprovo/Practitioner1
+<https://w3id.org/pghdprovo/Practitioner1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Practitioner1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Practitioner> .
+<https://w3id.org/pghdprovo/Practitioner1> <https://w3id.org/pghdprovo/isAStaffOf> <https://w3id.org/pghdprovo/Organisation1> .
+<https://w3id.org/pghdprovo/Practitioner1> <http://xmlns.com/foaf/0.1/givenName> "Abdullahi Kawu" .
+<https://w3id.org/pghdprovo/Practitioner1> <https://w3id.org/pghdprovo/address> "50 Clondalkin Avenue, Dublin" .
+<https://w3id.org/pghdprovo/Practitioner1> <https://w3id.org/pghdprovo/phoneNumber> "+91011000000" .
+<https://w3id.org/pghdprovo/Practitioner1> <https://w3id.org/pghdprovo/role> "Doctor" .
+<https://w3id.org/pghdprovo/Practitioner1> <https://w3id.org/pghdprovo/userid> "0873" .
+# 
+# https://w3id.org/pghdprovo/Programme1
+<https://w3id.org/pghdprovo/Programme1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Programme1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Programme> .
+<https://w3id.org/pghdprovo/Programme1> <https://w3id.org/pghdprovo/programmeName> "30 minutes reading." .
+# 
+# https://w3id.org/pghdprovo/Protocol1
+<https://w3id.org/pghdprovo/Protocol1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Protocol1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Protocol> .
+<https://w3id.org/pghdprovo/Protocol1> <https://w3id.org/pghdprovo/bodySite> "Left arm" .
+# 
+# https://w3id.org/pghdprovo/Rating1
+<https://w3id.org/pghdprovo/Rating1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Rating1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Rating> .
+<https://w3id.org/pghdprovo/Rating1> <https://w3id.org/pghdprovo/ratingOrgName> "FDA" .
+<https://w3id.org/pghdprovo/Rating1> <https://w3id.org/pghdprovo/ratingScore> "7.6"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# https://w3id.org/pghdprovo/Sleep1
+<https://w3id.org/pghdprovo/Sleep1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/Sleep1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Sleep> .
+<https://w3id.org/pghdprovo/Sleep1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/Sleep1> <http://www.w3.org/ns/prov#wasDerivedFrom> <https://w3id.org/pghdprovo/FitbitWearable> .
+<https://w3id.org/pghdprovo/Sleep1> <http://www.w3.org/ns/prov#wasGeneratedBy> <https://w3id.org/pghdprovo/PGHDRequest1> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/ContextualDataInfo1> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Rating1> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/State2> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/hasSleepStage> <https://w3id.org/pghdprovo/SleepStage1> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/wasCollectedBy> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/asleepDuration> "384"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/dataSource> "Wearable" .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/endTime> "2020-02-21T07:03:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/sleepDate> "2020-02-21T07:03:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/sleepDuration> "986"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/sleepEfficiency> "96"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/sleepLatency> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/startTime> "2020-02-20T23:21:30"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/pghdprovo/Sleep1> <https://w3id.org/pghdprovo/wakeupLatency> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/pghdprovo/SleepStage1
+<https://w3id.org/pghdprovo/SleepStage1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/SleepStage1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/SleepStage> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/hasContextualInfo> <https://w3id.org/pghdprovo/Rating1> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/wasCollectedBy> <https://w3id.org/pghdprovo/Patient1> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/deepsleepduration> "104"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/lightsleepduration> "205"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/remsleepduration> "75"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/pghdprovo/SleepStage1> <https://w3id.org/pghdprovo/wakeupduration> "78"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# https://w3id.org/pghdprovo/State1
+<https://w3id.org/pghdprovo/State1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/State1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/State> .
+<https://w3id.org/pghdprovo/State1> <https://w3id.org/pghdprovo/exerciseState> "post-excercise" .
+<https://w3id.org/pghdprovo/State1> <https://w3id.org/pghdprovo/posture> "sitting" .
+# 
+# https://w3id.org/pghdprovo/State2
+<https://w3id.org/pghdprovo/State2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/State2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/State> .
+<https://w3id.org/pghdprovo/State2> <https://w3id.org/pghdprovo/posture> "Sleeping" .
+# 
+# https://w3id.org/pghdprovo/application1
+<https://w3id.org/pghdprovo/application1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/pghdprovo/application1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/pghdprovo/Application> .
+<https://w3id.org/pghdprovo/application1> <http://www.w3.org/ns/prov#wasAttributedTo> <https://w3id.org/pghdprovo/Practitioner1> .
+<https://w3id.org/pghdprovo/application1> <https://w3id.org/pghdprovo/appName> "OpenEMR" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid56 <http://www.w3.org/2002/07/owl#members> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#SoftwareAgent> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Person> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/prov#Organization> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid60 <http://www.w3.org/2002/07/owl#members> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/PGHD> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/ContextualInfo> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Application> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://saref.etsi.org/core/Device> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid65 <http://www.w3.org/2002/07/owl#members> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/SleepStage> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Sleep> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/DailyActivity> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/ActivityLevel> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid70 <http://www.w3.org/2002/07/owl#members> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Practitioner> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/PatientRelative> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Patient> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid74 <http://www.w3.org/2002/07/owl#members> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/State> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Rating> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Protocol> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/pghdprovo/Programme> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
