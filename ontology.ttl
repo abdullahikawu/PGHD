@@ -1,0 +1,1578 @@
+@prefix : <https://w3id.org/pghdprovo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/pghdprovo/> .
+
+<https://w3id.org/pghdprovo/> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/elements/1.1/creator> "Abdullahi Abubakar Kawu" ;
+                               <http://purl.org/dc/elements/1.1/title> "PGHD-PROVO Ontology" ;
+                               owl:versionInfo "1.0.0" ;
+                               <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#category
+<http://www.w3.org/ns/prov#category> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#component
+<http://www.w3.org/ns/prov#component> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#constraints
+<http://www.w3.org/ns/prov#constraints> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#definition
+<http://www.w3.org/ns/prov#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#dm
+<http://www.w3.org/ns/prov#dm> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#editorialNote
+<http://www.w3.org/ns/prov#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#inverse
+<http://www.w3.org/ns/prov#inverse> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#n
+<http://www.w3.org/ns/prov#n> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#qualifiedForm
+<http://www.w3.org/ns/prov#qualifiedForm> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pghdprovo/otherPropertyNames
+:otherPropertyNames rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/pghdprovo/propertySource
+:propertySource rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ns/prov#actedOnBehalfOf
+<http://www.w3.org/ns/prov#actedOnBehalfOf> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                            rdfs:domain <http://www.w3.org/ns/prov#Agent> ;
+                                            rdfs:range <http://www.w3.org/ns/prov#Agent> ;
+                                            rdfs:comment "An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. "@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                            rdfs:label "actedOnBehalfOf" ;
+                                            <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                            <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                            <http://www.w3.org/ns/prov#inverse> "hadDelegate" ;
+                                            <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Delegation> ,
+                                                                                      <http://www.w3.org/ns/prov#qualifiedDelegation> .
+
+
+###  http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf <http://www.w3.org/ns/prov#wasGeneratedBy> .
+
+
+###  http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                 rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                 rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                 rdfs:comment "A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven ."@en ;
+                                 rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                 rdfs:label "used" ;
+                                 <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                 <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                 <http://www.w3.org/ns/prov#inverse> "wasUsedBy" ;
+                                 <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Usage> ,
+                                                                           <http://www.w3.org/ns/prov#qualifiedUsage> .
+
+
+###  http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                              rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                              rdfs:range <http://www.w3.org/ns/prov#Agent> ;
+                                              rdfs:comment "An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity."@en ;
+                                              rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                              rdfs:label "wasAssociatedWith" ;
+                                              <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                              <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                              <http://www.w3.org/ns/prov#inverse> "wasAssociateFor" ;
+                                              <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Association> ,
+                                                                                        <http://www.w3.org/ns/prov#qualifiedAssociation> .
+
+
+###  http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> rdf:type owl:ObjectProperty ;
+                                            rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                            rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                            rdfs:range <http://www.w3.org/ns/prov#Agent> ;
+                                            rdfs:comment "Attribution is the ascribing of an entity to an agent."@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                            rdfs:label "wasAttributedTo" ;
+                                            <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                            <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                            <http://www.w3.org/ns/prov#definition> "Attribution is the ascribing of an entity to an agent."@en ;
+                                            <http://www.w3.org/ns/prov#inverse> "contributed" ;
+                                            <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Attribution> ,
+                                                                                      <http://www.w3.org/ns/prov#qualifiedAttribution> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/prov#wasAttributedTo> ;
+   owl:annotatedProperty rdfs:subPropertyOf ;
+   owl:annotatedTarget <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+   rdfs:comment "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it." ;
+   <http://www.w3.org/ns/prov#definition> "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. "
+ ] .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                           rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:range <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:comment "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en ;
+                                           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                           rdfs:label "wasDerivedFrom" ;
+                                           <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                           <http://www.w3.org/ns/prov#component> "derivations" ;
+                                           <http://www.w3.org/ns/prov#definition> "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."@en ;
+                                           <http://www.w3.org/ns/prov#inverse> "hadDerivation" ;
+                                           <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Derivation> ,
+                                                                                     <http://www.w3.org/ns/prov#qualifiedDerivation> .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+   owl:annotatedProperty rdfs:subPropertyOf ;
+   owl:annotatedTarget <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+   rdfs:comment "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence."
+ ] .
+
+
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasInfluencedBy> ;
+                                           rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                           rdfs:range <http://www.w3.org/ns/prov#Activity> ;
+                                           rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                           rdfs:label "wasGeneratedBy" ;
+                                           <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                           <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                           <http://www.w3.org/ns/prov#inverse> "generated" ;
+                                           <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Generation> ,
+                                                                                     <http://www.w3.org/ns/prov#qualifiedGeneration> .
+
+
+###  http://www.w3.org/ns/prov#wasInfluencedBy
+<http://www.w3.org/ns/prov#wasInfluencedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/pghdprovo/PGHDRequestedBy
+:PGHDRequestedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :PGHDRequest ;
+                 rdfs:range :Practitioner ;
+                 rdfs:comment "A object property that declares the prov:agent responsible for the initializing a request for acquiring of patient Health data." ;
+                 rdfs:label "PGHD requested by" .
+
+
+###  https://w3id.org/pghdprovo/hasContextualInfo
+:hasContextualInfo rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PGHD ;
+                   rdfs:range :ContextualInfo ;
+                   rdfs:comment "Has some contextual information associated to the PGHD" ;
+                   rdfs:label "Contain Contextual Info" .
+
+
+###  https://w3id.org/pghdprovo/hasLevel
+:hasLevel rdf:type owl:ObjectProperty ;
+          rdfs:domain :DailyActivity ;
+          rdfs:range :ActivityLevel ;
+          rdfs:comment "Record of daily physical Activity levels." ;
+          rdfs:label "has level" .
+
+
+###  https://w3id.org/pghdprovo/hasSleepStage
+:hasSleepStage rdf:type owl:ObjectProperty ;
+               rdfs:domain :Sleep ;
+               rdfs:range :SleepStage ;
+               rdfs:comment "Record of sleep Stages." ;
+               rdfs:label "has sleep stage" .
+
+
+###  https://w3id.org/pghdprovo/isAStaffOf
+:isAStaffOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Practitioner ;
+            rdfs:range <http://www.w3.org/ns/prov#Organization> ;
+            rdfs:comment "Shows the institution a person works." ;
+            rdfs:label "is a staff of" .
+
+
+###  https://w3id.org/pghdprovo/wasAuthorizedBy
+:wasAuthorizedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :PGHDRequest ;
+                 rdfs:range :Patient ;
+                 rdfs:comment "A person who grant access to data requested." ;
+                 rdfs:label "was authorized by" .
+
+
+###  https://w3id.org/pghdprovo/wasCollectedBy
+:wasCollectedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :PGHD ;
+                rdfs:range <http://www.w3.org/ns/prov#Agent> ;
+                rdfs:comment "Ascribing a person engaged in the retrieval of health data. This could be the patient themself, a caregiver, a relative, or a friend." ;
+                rdfs:label "was collected by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                        rdfs:range xsd:dateTime ;
+                                        rdfs:comment "The time at which an activity ended. See also prov:startedAtTime."@en ,
+                                                     """The number of calories burned associated with the
+activity.""" ;
+                                        rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                        rdfs:label "endedAtTime" ;
+                                        <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                        <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                        <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedEnd o prov:atTime) rdfs:subPropertyOf prov:endedAtTime."@en ;
+                                        <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#End> ,
+                                                                                  <http://www.w3.org/ns/prov#atTime> .
+
+
+###  http://www.w3.org/ns/prov#generatedAtTime
+<http://www.w3.org/ns/prov#generatedAtTime> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://www.w3.org/ns/prov#Entity> ;
+                                            rdfs:range xsd:dateTime ;
+                                            rdfs:comment "The time at which an entity was completely created and is available for use."@en ;
+                                            rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                            rdfs:label "generatedAtTime" ;
+                                            <http://www.w3.org/ns/prov#category> "expanded" ;
+                                            <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                            <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedGeneration o prov:atTime) rdfs:subPropertyOf prov:generatedAtTime."@en ;
+                                            <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Generation> ,
+                                                                                      <http://www.w3.org/ns/prov#atTime> .
+
+
+###  http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                                          rdfs:range xsd:dateTime ;
+                                          rdfs:comment "The time at which an activity started. See also prov:endedAtTime."@en ;
+                                          rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                          rdfs:label "startedAtTime" ;
+                                          <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                          <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                          <http://www.w3.org/ns/prov#editorialNote> "It is the intent that the property chain holds: (prov:qualifiedStart o prov:atTime) rdfs:subPropertyOf prov:startedAtTime."@en ;
+                                          <http://www.w3.org/ns/prov#qualifiedForm> <http://www.w3.org/ns/prov#Start> ,
+                                                                                    <http://www.w3.org/ns/prov#atTime> .
+
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdf:type owl:DatatypeProperty .
+
+
+###  http://xmlns.com/foaf/0.1/birthday
+<http://xmlns.com/foaf/0.1/birthday> rdf:type owl:DatatypeProperty ;
+                                     rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/age> ;
+                                     rdf:type owl:FunctionalProperty ;
+                                     rdfs:comment "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'." ;
+                                     rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                     rdfs:label "birthday" ;
+                                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "unstable" .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdf:type owl:DatatypeProperty ,
+                                            owl:FunctionalProperty ;
+                                   rdfs:comment "The gender of this Agent (typically but not necessarily 'male' or 'female')." ;
+                                   rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                   rdfs:label "gender" ;
+                                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> rdf:type owl:DatatypeProperty ;
+                                      rdfs:comment "The given name of some person." ;
+                                      rdfs:isDefinedBy <http://xmlns.com/foaf/0.1/> ;
+                                      rdfs:label "Given name" ;
+                                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/pghdprovo/activityCalories
+:activityCalories rdf:type owl:DatatypeProperty ;
+                  owl:equivalentProperty :calories ;
+                  rdfs:subPropertyOf :dailyActivityProperty ;
+                  rdfs:domain :DailyActivity ;
+                  rdfs:comment "The number of calories burned associated with an activity." ;
+                  rdfs:label "actvity calories" ;
+                  :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:domain <http://www.w3.org/ns/prov#Person> ;
+         rdfs:comment "A standardized representation of the location of a person, business, building, or organization." ;
+         rdfs:isDefinedBy "http://purl.obolibrary.org/obo/NCIT_C25407" ;
+         rdfs:label "address" .
+
+
+###  https://w3id.org/pghdprovo/appName
+:appName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Application ;
+         rdfs:comment "The name of the software application utilised by a patient and practitioner." ;
+         rdfs:label "app name" .
+
+
+###  https://w3id.org/pghdprovo/asleepDuration
+:asleepDuration rdf:type owl:DatatypeProperty ;
+                owl:equivalentProperty :total_sleep_time ;
+                rdfs:subPropertyOf :sleepProperty ;
+                rdfs:domain :Sleep ;
+                rdfs:comment "Length of the sleep." ;
+                rdfs:label "asleep duration" .
+
+
+###  https://w3id.org/pghdprovo/bodySite
+:bodySite rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Protocol ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The part of the body where data is collected or which a device was placed to collect health data." ;
+          rdfs:label "Body Site" .
+
+
+###  https://w3id.org/pghdprovo/calories
+:calories rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :dailyActivityProperty ;
+          rdfs:comment "The number of calories burned associated with an activity." ;
+          rdfs:label "calories" ;
+          :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/caloriesOut
+:caloriesOut rdf:type owl:DatatypeProperty ;
+             owl:equivalentProperty :totalCalories ;
+             rdfs:subPropertyOf :dailyActivityProperty ;
+             rdfs:comment "Total calories burned. Obtained by adding active calories and passive calories" ;
+             rdfs:label "calories out" ;
+             :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/dailyActivityProperty
+:dailyActivityProperty rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/pghdprovo/dataSource
+:dataSource rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PGHD ;
+            rdfs:comment "An entity that produce a digital data." ;
+            rdfs:label "data source" .
+
+
+###  https://w3id.org/pghdprovo/date
+:date rdf:type owl:DatatypeProperty ;
+      owl:equivalentProperty :sleepDate ;
+      rdfs:subPropertyOf :sleepProperty ;
+      rdfs:domain :Sleep ;
+      rdfs:comment "The date the sleep was logged." ;
+      rdfs:label "date" ;
+      :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/dateOfSleep
+:dateOfSleep rdf:type owl:DatatypeProperty ;
+             owl:equivalentProperty :sleepDate ;
+             rdfs:subPropertyOf :sleepProperty ;
+             rdfs:domain :Sleep ;
+             rdfs:comment "The date the sleep was logged." ;
+             rdfs:label "date of sleep" ;
+             :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/deepsleepduration
+:deepsleepduration rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :sleepProperty ;
+                   rdfs:domain :SleepStage ;
+                   rdfs:comment "Duration in deep sleep state." ;
+                   rdfs:label "deepsleepduration" ;
+                   :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PGHDRequest ;
+             rdfs:comment "Provide more information about an activity." ;
+             rdfs:label "description" .
+
+
+###  https://w3id.org/pghdprovo/deviceModel
+:deviceModel rdf:type owl:DatatypeProperty ;
+             rdfs:domain <https://saref.etsi.org/core/Device> ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A unique number or name given by a device manufacturer to devices that corresponds to a certain characteristics." ;
+             rdfs:label "device model" .
+
+
+###  https://w3id.org/pghdprovo/deviceName
+:deviceName rdf:type owl:DatatypeProperty ;
+            rdfs:domain <https://saref.etsi.org/core/Device> ;
+            rdfs:range xsd:string ;
+            rdfs:comment "A name for a device." ;
+            rdfs:label "device name" .
+
+
+###  https://w3id.org/pghdprovo/efficiency
+:efficiency rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty :sleepEfficiency ;
+            rdfs:subPropertyOf :sleepProperty ;
+            rdfs:domain :Sleep ;
+            rdfs:comment "A relative measurement of the time spent asleep to the total time spent in bed." ;
+            rdfs:label "efficiency" ;
+            :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/elevation
+:elevation rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :dailyActivityProperty ;
+           rdfs:domain :DailyActivity ;
+           rdfs:comment "The elevation traveled for the day." ;
+           rdfs:label "elevation" ;
+           :propertySource "fitbit" ,
+                           "withings" .
+
+
+###  https://w3id.org/pghdprovo/endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         owl:equivalentProperty :enddate ;
+         rdfs:subPropertyOf :sleepProperty ;
+         rdfs:domain :Sleep ;
+         rdfs:comment "Time the sleep log ended." ;
+         rdfs:label "end time" ;
+         :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/enddate
+:enddate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :sleepProperty ;
+         rdfs:domain :Sleep ;
+         rdfs:comment "Time the sleep log ended." ;
+         rdfs:label "end date" ;
+         :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/exerciseState
+:exerciseState rdf:type owl:DatatypeProperty ;
+               rdfs:domain :State ;
+               rdfs:range xsd:string ;
+               rdfs:comment "exercise state." ;
+               rdfs:label "exercise state" .
+
+
+###  https://w3id.org/pghdprovo/fairlyActive
+:fairlyActive rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty :fairlyActiveMinutes ,
+                                     :moderate ;
+              rdfs:subPropertyOf :dailyActivityProperty ;
+              rdfs:domain :ActivityLevel ;
+              rdfs:comment "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" ;
+              rdfs:label "fairly active" .
+
+
+###  https://w3id.org/pghdprovo/fairlyActiveMinutes
+:fairlyActiveMinutes rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf :dailyActivityProperty ;
+                     rdfs:comment "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" ;
+                     rdfs:label "fairly active minutes" ;
+                     :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/floors
+:floors rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :dailyActivityProperty ;
+        rdfs:domain :DailyActivity ;
+        rdfs:comment "The equivalent floors climbed for the day" ;
+        rdfs:label "floors" .
+
+
+###  https://w3id.org/pghdprovo/intense
+:intense rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf :dailyActivityProperty ;
+         rdfs:comment "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." ;
+         rdfs:label "intense" ;
+         :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/light
+:light rdf:type owl:DatatypeProperty ;
+       owl:equivalentProperty :lightsleepduration ;
+       rdfs:subPropertyOf :sleepProperty ;
+       rdfs:domain :SleepStage ;
+       rdfs:comment "Duration in light sleep state." ;
+       rdfs:label "light" ;
+       :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/lightlyActive
+:lightlyActive rdf:type owl:DatatypeProperty ;
+               owl:equivalentProperty :lightlyActiveMinutes ,
+                                      :soft ;
+               rdfs:subPropertyOf :dailyActivityProperty ;
+               rdfs:domain :ActivityLevel ;
+               rdfs:comment "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" ;
+               rdfs:label "lightly active" .
+
+
+###  https://w3id.org/pghdprovo/lightlyActiveMinutes
+:lightlyActiveMinutes rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf :dailyActivityProperty ;
+                      rdfs:comment "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" ;
+                      rdfs:label "lightly active minutes" ;
+                      :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/lightsleepduration
+:lightsleepduration rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :sleepProperty ;
+                    rdfs:domain :SleepStage ;
+                    rdfs:comment "Duration in light sleep state." ;
+                    rdfs:label "light sleep duration" ;
+                    :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/locationOfPatient
+:locationOfPatient rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :ContextualInfo ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Location of a patient during data collection." ;
+                   rdfs:label "location of patient" .
+
+
+###  https://w3id.org/pghdprovo/minuteToFallAsleep
+:minuteToFallAsleep rdf:type owl:DatatypeProperty ;
+                    owl:equivalentProperty :sleep_latency ;
+                    rdfs:subPropertyOf :sleepProperty ;
+                    rdfs:domain :Sleep ;
+                    rdfs:comment "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." ;
+                    rdfs:label "minute to fall asleep" ;
+                    :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/minutesAfterWakeup
+:minutesAfterWakeup rdf:type owl:DatatypeProperty ;
+                    owl:equivalentProperty :wakeupLatency ;
+                    rdfs:subPropertyOf :sleepProperty ;
+                    rdfs:domain :Sleep ;
+                    rdfs:comment "Time spent in bed after waking up." ;
+                    rdfs:label "minutes after wakeup" ;
+                    :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/moderate
+:moderate rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :dailyActivityProperty ;
+          rdfs:comment "Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0" ;
+          rdfs:label "moderate" ;
+          :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/orgAddress
+:orgAddress rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain <http://www.w3.org/ns/prov#Organization> ;
+            rdfs:comment "Location of organisation." ;
+            rdfs:label "organization address" .
+
+
+###  https://w3id.org/pghdprovo/orgEmail
+:orgEmail rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain <http://www.w3.org/ns/prov#Organization> ;
+          rdfs:comment "Organization email address." ;
+          rdfs:label "organization email" .
+
+
+###  https://w3id.org/pghdprovo/orgId
+:orgId rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain <http://www.w3.org/ns/prov#Organization> ;
+       rdfs:comment "An identifier for an organization." ;
+       rdfs:label "organization id" .
+
+
+###  https://w3id.org/pghdprovo/orgName
+:orgName rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain <http://www.w3.org/ns/prov#Organization> ;
+         rdfs:comment "The name of the organization where a practitioner belongs." ;
+         rdfs:label "organization name" .
+
+
+###  https://w3id.org/pghdprovo/phoneNumber
+:phoneNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain <http://www.w3.org/ns/prov#Person> ;
+             rdfs:comment "Phone contact number." ;
+             rdfs:label "phone number" .
+
+
+###  https://w3id.org/pghdprovo/posture
+:posture rdf:type owl:DatatypeProperty ;
+         rdfs:domain :State ;
+         rdfs:range xsd:string ;
+         rdfs:comment "The body position of the patient during data collection." ;
+         rdfs:label "posture" .
+
+
+###  https://w3id.org/pghdprovo/programmeName
+:programmeName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Programme ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The treatment programme associated with the PGHD request." ;
+               rdfs:label "programme name" .
+
+
+###  https://w3id.org/pghdprovo/ratingOrgName
+:ratingOrgName rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :Rating ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Denotes the name of the organization that conducted the rating." ;
+               rdfs:label "rating organization name" .
+
+
+###  https://w3id.org/pghdprovo/ratingScore
+:ratingScore rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Rating ;
+             rdfs:range xsd:decimal ;
+             rdfs:comment "The efficiency rating of an equipement or device by recognized body." ;
+             rdfs:label "rating score" .
+
+
+###  https://w3id.org/pghdprovo/relationship
+:relationship rdf:type owl:DatatypeProperty ;
+              rdfs:domain :PatientRelative ;
+              rdfs:comment "shows the relationship of a caregiver, friend, or relative to a patient." ;
+              rdfs:label "relationship" .
+
+
+###  https://w3id.org/pghdprovo/rem
+:rem rdf:type owl:DatatypeProperty ;
+     owl:equivalentProperty :remsleepduration ;
+     rdfs:subPropertyOf :sleepProperty ;
+     rdfs:domain :SleepStage ;
+     rdfs:comment "A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming." ;
+     rdfs:label "rem" ;
+     :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/remsleepduration
+:remsleepduration rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :sleepProperty ;
+                  rdfs:domain :SleepStage ;
+                  rdfs:comment "A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming." ;
+                  rdfs:label "rem sleep duration" ;
+                  :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/requestId
+:requestId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :PGHDRequest ;
+           rdfs:comment "Log id for an activity." ;
+           rdfs:label "activity id" .
+
+
+###  https://w3id.org/pghdprovo/role
+:role rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Practitioner ;
+      rdfs:comment "position or function within an organization" ;
+      rdfs:label "role" .
+
+
+###  https://w3id.org/pghdprovo/sedentary
+:sedentary rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :dailyActivityProperty ;
+           rdfs:domain :ActivityLevel ;
+           rdfs:comment "Duration of sedentary activities. Activities with  a Metabolic Equivalents (MET) value of less than 1.5" ;
+           rdfs:label "sedentary" .
+
+
+###  https://w3id.org/pghdprovo/sleepDate
+:sleepDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :sleepProperty ;
+           rdfs:domain :Sleep ;
+           rdfs:comment "The date the sleep was logged." ;
+           rdfs:label "sleep date" .
+
+
+###  https://w3id.org/pghdprovo/sleepDuration
+:sleepDuration rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :sleepProperty ;
+               rdfs:domain :Sleep ;
+               rdfs:comment "Length of the sleep." ;
+               rdfs:label "sleep duration" .
+
+
+###  https://w3id.org/pghdprovo/sleepEfficiency
+:sleepEfficiency rdf:type owl:DatatypeProperty ;
+                 owl:equivalentProperty :sleep_efficiency ;
+                 rdfs:subPropertyOf :sleepProperty ;
+                 rdfs:domain :Sleep ;
+                 rdfs:comment "A relative measurement of the time spent asleep to the total time spent in bed." ;
+                 rdfs:label "sleep efficiency" .
+
+
+###  https://w3id.org/pghdprovo/sleepLatency
+:sleepLatency rdf:type owl:DatatypeProperty ;
+              owl:equivalentProperty :sleep_latency ;
+              rdfs:subPropertyOf :sleepProperty ;
+              rdfs:domain :Sleep ;
+              rdfs:comment "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." ;
+              rdfs:label "sleep latency" .
+
+
+###  https://w3id.org/pghdprovo/sleepProperty
+:sleepProperty rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/pghdprovo/sleep_efficiency
+:sleep_efficiency rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :sleepProperty ;
+                  rdfs:domain :Sleep ;
+                  rdfs:comment "A relative measurement of the time spent asleep to the total time spent in bed." ;
+                  rdfs:label "sleep efficiency" ;
+                  :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/sleep_latency
+:sleep_latency rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :sleepProperty ;
+               rdfs:domain :Sleep ;
+               rdfs:comment "The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep." ;
+               rdfs:label "sleep latency" ;
+               :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/soft
+:soft rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf :dailyActivityProperty ;
+      rdfs:comment "Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0" ;
+      rdfs:label "soft" .
+
+
+###  https://w3id.org/pghdprovo/startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           owl:equivalentProperty :startdate ;
+           rdfs:subPropertyOf :sleepProperty ;
+           rdfs:domain :Sleep ;
+           rdfs:comment "Time the sleep log begins. Also as \"sleep time\" Measurement of the time at which sleep begins." ;
+           rdfs:label "start time" ;
+           :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/startdate
+:startdate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :sleepProperty ;
+           rdfs:domain :Sleep ;
+           rdfs:comment "Time the sleep log begins. Also as \"sleep time\" Measurement of the time at which sleep begins." ;
+           rdfs:label "start date" ;
+           :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/steps
+:steps rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf :dailyActivityProperty ;
+       rdfs:domain :DailyActivity ;
+       rdfs:comment "Total steps count for the day." ;
+       rdfs:label "steps" ;
+       :propertySource "fitbit" ,
+                       "withings" .
+
+
+###  https://w3id.org/pghdprovo/totalCalories
+:totalCalories rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :dailyActivityProperty ;
+               rdfs:domain :DailyActivity ;
+               rdfs:comment "Total calories burned. Obtained by adding active calories and passive calories" ;
+               rdfs:label "total calories" ;
+               :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/total_sleep_time
+:total_sleep_time rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :sleepProperty ;
+                  rdfs:domain :Sleep ;
+                  rdfs:comment "Length of the sleep." ;
+                  rdfs:label "total sleep time" ;
+                  :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/userid
+:userid rdf:type owl:DatatypeProperty ;
+        rdfs:domain <http://www.w3.org/ns/prov#Person> ;
+        rdfs:comment "User identifier." ;
+        rdfs:label "user id" .
+
+
+###  https://w3id.org/pghdprovo/veryActive
+:veryActive rdf:type owl:DatatypeProperty ;
+            owl:equivalentProperty :veryActiveMinutes ;
+            rdfs:subPropertyOf :dailyActivityProperty ;
+            rdfs:domain :ActivityLevel ;
+            rdfs:comment "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." ;
+            rdfs:label "very active" .
+
+
+###  https://w3id.org/pghdprovo/veryActiveMinutes
+:veryActiveMinutes rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf :dailyActivityProperty ;
+                   rdfs:comment "Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0." ;
+                   rdfs:label "very active minutes" ;
+                   :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/wake
+:wake rdf:type owl:DatatypeProperty ;
+      owl:equivalentProperty :wakeupduration ;
+      rdfs:subPropertyOf :sleepProperty ;
+      rdfs:domain :SleepStage ;
+      rdfs:comment "A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset." ;
+      rdfs:label "wake" ;
+      :propertySource "fitbit" .
+
+
+###  https://w3id.org/pghdprovo/wakeupLatency
+:wakeupLatency rdf:type owl:DatatypeProperty ;
+               owl:equivalentProperty :wakeup_latency ;
+               rdfs:subPropertyOf :sleepProperty ;
+               rdfs:domain :Sleep ;
+               rdfs:comment "Time spent in bed after waking up." ;
+               rdfs:label "wakeup latency" .
+
+
+###  https://w3id.org/pghdprovo/wakeup_latency
+:wakeup_latency rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :sleepProperty ;
+                rdfs:domain :Sleep ;
+                rdfs:comment "Time spent in bed after waking up." ;
+                rdfs:label "wakeup latency" ;
+                :propertySource "withings" .
+
+
+###  https://w3id.org/pghdprovo/wakeupduration
+:wakeupduration rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :sleepProperty ;
+                rdfs:domain :SleepStage ;
+                rdfs:comment "A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset." ;
+                rdfs:label "wake up duration" ;
+                :propertySource "withings" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> rdf:type owl:Class ;
+                                     owl:disjointWith <http://www.w3.org/ns/prov#Entity> ;
+                                     rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                     rdfs:label "Activity" ;
+                                     <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                     <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                     <http://www.w3.org/ns/prov#constraints> "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+                                     <http://www.w3.org/ns/prov#definition> "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities." ;
+                                     <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-Activity"^^xsd:anyURI ;
+                                     <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Activity"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class ;
+                                  rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                  rdfs:label "Agent" ;
+                                  <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                  <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                  <http://www.w3.org/ns/prov#definition> "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. "@en ;
+                                  <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+                                  <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Agent"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
+                                   rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                   rdfs:label "Entity" ;
+                                   <http://www.w3.org/ns/prov#category> "starting-point" ;
+                                   <http://www.w3.org/ns/prov#component> "entities-activities" ;
+                                   <http://www.w3.org/ns/prov#constraints> "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+                                   <http://www.w3.org/ns/prov#definition> "An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. "@en ;
+                                   <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-entity"^^xsd:anyURI ;
+                                   <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-Entity"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :orgAddress ;
+                                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :orgEmail ;
+                                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :orgId ;
+                                                           owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :orgName ;
+                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                           owl:onDataRange xsd:string
+                                                         ] ;
+                                         rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                         rdfs:label "Organization" ;
+                                         <http://www.w3.org/ns/prov#category> "expanded" ;
+                                         <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                         <http://www.w3.org/ns/prov#definition> "An organization is a social or legal institution such as a company, society, etc." ;
+                                         <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+                                         <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :phoneNumber ;
+                                                     owl:someValuesFrom xsd:string
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :userid ;
+                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onDataRange xsd:string
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://xmlns.com/foaf/0.1/birthday> ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://xmlns.com/foaf/0.1/gender> ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://xmlns.com/foaf/0.1/givenName> ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :address ;
+                                                     owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ;
+                                   rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                   rdfs:label "Person" ;
+                                   <http://www.w3.org/ns/prov#category> "expanded" ;
+                                   <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                   <http://www.w3.org/ns/prov#definition> "Person agents are people."@en ;
+                                   <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+                                   <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^xsd:anyURI .
+
+
+###  http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+                                          rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
+                                          rdfs:label "SoftwareAgent" ;
+                                          <http://www.w3.org/ns/prov#category> "expanded" ;
+                                          <http://www.w3.org/ns/prov#component> "agents-responsibility" ;
+                                          <http://www.w3.org/ns/prov#definition> "A software agent is running software."@en ;
+                                          <http://www.w3.org/ns/prov#dm> "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-agent"^^xsd:anyURI ;
+                                          <http://www.w3.org/ns/prov#n> "http://www.w3.org/TR/2013/REC-prov-n-20130430/#expression-types"^^xsd:anyURI .
+
+
+###  https://saref.etsi.org/core/Device
+<https://saref.etsi.org/core/Device> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                                     rdfs:comment "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function."@en ;
+                                     rdfs:isDefinedBy <https://saref.etsi.org/core/> ;
+                                     rdfs:label "Device"@en .
+
+
+###  https://saref.etsi.org/saref4wear/User
+<https://saref.etsi.org/saref4wear/User> rdf:type owl:Class ;
+                                         owl:equivalentClass :Patient ;
+                                         rdfs:subClassOf <http://www.w3.org/ns/prov#Person> ;
+                                         rdfs:comment "A user is an entity using a wearable."@en ;
+                                         rdfs:label "User"@en .
+
+
+###  https://saref.etsi.org/saref4wear/Wearable
+<https://saref.etsi.org/saref4wear/Wearable> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://saref.etsi.org/core/Device> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :deviceModel ;
+                                                               owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:string
+                                                             ] ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :deviceName ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:string
+                                                             ] ;
+                                             rdfs:comment "A wearable device is a device that is intended to be located near, on or in an organism."@en ;
+                                             rdfs:label "Wearable device"@en .
+
+
+###  https://w3id.org/pghdprovo/ActivityLevel
+:ActivityLevel rdf:type owl:Class ;
+               rdfs:subClassOf :PGHD ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :fairlyActive ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :lightlyActive ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :sedentary ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :veryActive ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ;
+               rdfs:comment "Levels: Stages of activity ranging from 0 - 6+ Metabolic Equivalents (MET)" ;
+               rdfs:label "Activity Level" .
+
+
+###  https://w3id.org/pghdprovo/Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#wasAttributedTo> ;
+                               owl:someValuesFrom <http://www.w3.org/ns/prov#Person>
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :appName ;
+                               owl:someValuesFrom xsd:string
+                             ] ;
+             rdfs:comment "A software application is a software that can be directly executed by some processing unit." ;
+             rdfs:label "Application" .
+
+
+###  https://w3id.org/pghdprovo/ContextualInfo
+:ContextualInfo rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+                rdfs:label "contextual information" .
+
+
+###  https://w3id.org/pghdprovo/DailyActivity
+:DailyActivity rdf:type owl:Class ;
+               rdfs:subClassOf :PGHD ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasLevel ;
+                                 owl:someValuesFrom :ActivityLevel
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :activityCalories ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :elevation ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :floors ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :steps ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :totalCalories ;
+                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:integer
+                               ] ;
+               rdfs:comment "Physical activities carried out during the day." ;
+               rdfs:label "Daily Activity" .
+
+
+###  https://w3id.org/pghdprovo/PGHD
+:PGHD rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+                        owl:someValuesFrom <https://saref.etsi.org/saref4wear/Wearable>
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasContextualInfo ;
+                        owl:someValuesFrom :ContextualInfo
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :wasCollectedBy ;
+                        owl:someValuesFrom <http://www.w3.org/ns/prov#Person>
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.w3.org/ns/prov#wasAttributedTo> ;
+                        owl:allValuesFrom :Patient
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                        owl:allValuesFrom :PGHDRequest
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :dataSource ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] ;
+      rdfs:comment "Patient Generated Health Data (PGHD) a term referring to data that patients (or their caregivers) collect from home or any location outside the clinical environment." ;
+      rdfs:label "PGHD" .
+
+
+###  https://w3id.org/pghdprovo/PGHDRequest
+:PGHDRequest rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                               owl:someValuesFrom :Application
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :PGHDRequestedBy ;
+                               owl:someValuesFrom :Practitioner
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#wasAssociatedWith> ;
+                               owl:allValuesFrom :Patient
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :wasAuthorizedBy ;
+                               owl:allValuesFrom :Patient
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#endedAtTime> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.w3.org/ns/prov#startedAtTime> ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:dateTime
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :requestId ;
+                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:integer
+                             ] ;
+             rdfs:comment "A request made by a practitioner to obtain patient health data generated by wearable device or software application." ;
+             rdfs:label "PGHD Request" .
+
+
+###  https://w3id.org/pghdprovo/Patient
+:Patient rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/prov#Person> ;
+         rdfs:comment "A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary." ;
+         rdfs:isDefinedBy "http://purl.obolibrary.org/obo/NCIT_C16960" ;
+         rdfs:label "Patient" .
+
+
+###  https://w3id.org/pghdprovo/PatientRelative
+:PatientRelative rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.w3.org/ns/prov#Person> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.w3.org/ns/prov#actedOnBehalfOf> ;
+                                   owl:someValuesFrom :Patient
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :relationship ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "A Patient relative or friend who helps to collect or transmit data." ;
+                 rdfs:label "Patient Relative" .
+
+
+###  https://w3id.org/pghdprovo/Practitioner
+:Practitioner rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Person> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :role ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ;
+              rdfs:comment """A person professionally engaged medical practice who is appointed to a post or duties.
+[Definition Source: NCI]""" ;
+              rdfs:isDefinedBy "http://purl.obolibrary.org/obo/NCIT_C51846" ;
+              rdfs:label "Practitioner" .
+
+
+###  https://w3id.org/pghdprovo/Programme
+:Programme rdf:type owl:Class ;
+           rdfs:subClassOf :ContextualInfo ;
+           rdfs:label "programme" .
+
+
+###  https://w3id.org/pghdprovo/Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:subClassOf :ContextualInfo ;
+          rdfs:label "protocol" .
+
+
+###  https://w3id.org/pghdprovo/Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :ContextualInfo ;
+        rdfs:label "rating" .
+
+
+###  https://w3id.org/pghdprovo/Sleep
+:Sleep rdf:type owl:Class ;
+       rdfs:subClassOf :PGHD ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasSleepStage ;
+                         owl:someValuesFrom :SleepStage
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :asleepDuration ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :endTime ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:dateTime
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :sleepDate ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:dateTime
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :sleepDuration ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :sleepEfficiency ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :sleepLatency ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :startTime ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:dateTime
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :wakeupLatency ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:integer
+                       ] ;
+       rdfs:comment "Data related to user sleep." ;
+       rdfs:label "Sleep" .
+
+
+###  https://w3id.org/pghdprovo/SleepStage
+:SleepStage rdf:type owl:Class ;
+            rdfs:subClassOf :PGHD ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :deepsleepduration ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :lightsleepduration ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :remsleepduration ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :wakeupduration ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ;
+            rdfs:comment "Data related to sleep stage." ;
+            rdfs:label "Sleep Stage" .
+
+
+###  https://w3id.org/pghdprovo/State
+:State rdf:type owl:Class ;
+       rdfs:subClassOf :ContextualInfo ;
+       rdfs:label "state" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/pghdprovo/ActivityLevel1
+:ActivityLevel1 rdf:type owl:NamedIndividual ,
+                         :ActivityLevel ;
+                :hasContextualInfo :Rating1 ;
+                :wasCollectedBy :PatientRelative1 ;
+                :fairlyActive 0 ;
+                :lightlyActive 110 ;
+                :sedentary 802 ;
+                :veryActive 0 .
+
+
+###  https://w3id.org/pghdprovo/BloodPressure1
+:BloodPressure1 rdf:type owl:NamedIndividual ,
+                         :PGHD ;
+                <http://www.w3.org/ns/prov#wasAttributedTo> :Patient1 ;
+                :hasContextualInfo :Programme1 .
+
+
+###  https://w3id.org/pghdprovo/ContextualDataInfo1
+:ContextualDataInfo1 rdf:type owl:NamedIndividual ,
+                              :ContextualInfo ;
+                     :locationOfPatient "home" .
+
+
+###  https://w3id.org/pghdprovo/DailyActivity1
+:DailyActivity1 rdf:type owl:NamedIndividual ,
+                         :DailyActivity ;
+                <http://www.w3.org/ns/prov#wasAttributedTo> :Patient1 ;
+                <http://www.w3.org/ns/prov#wasDerivedFrom> :FitbitWearable ;
+                <http://www.w3.org/ns/prov#wasGeneratedBy> :PGHDRequest1 ;
+                :hasContextualInfo :ContextualDataInfo1 ,
+                                   :Protocol1 ,
+                                   :Rating1 ;
+                :hasLevel :ActivityLevel1 ;
+                :wasCollectedBy :PatientRelative1 ;
+                :activityCalories 525 ;
+                :dataSource "Wearable" ;
+                :elevation 0 ;
+                :floors 0 ;
+                :steps 1698 ;
+                :totalCalories 2628 .
+
+
+###  https://w3id.org/pghdprovo/FitbitWearable
+:FitbitWearable rdf:type owl:NamedIndividual ,
+                         <https://saref.etsi.org/saref4wear/Wearable> ;
+                :deviceModel "Fitbit Versa 4" ;
+                :deviceName "Fitbit" .
+
+
+###  https://w3id.org/pghdprovo/Organisation1
+:Organisation1 rdf:type owl:NamedIndividual ,
+                        <http://www.w3.org/ns/prov#Organization> ;
+               :orgAddress "1 Grangegorman Dublin" ;
+               :orgEmail "tudmedics"@tudublin.ie ;
+               :orgId "01" ;
+               :orgName "TU Dublin Medical Center"^^rdfs:Literal .
+
+
+###  https://w3id.org/pghdprovo/PGHDRequest1
+:PGHDRequest1 rdf:type owl:NamedIndividual ,
+                       :PGHDRequest ;
+              <http://www.w3.org/ns/prov#used> :application1 ;
+              <http://www.w3.org/ns/prov#wasAssociatedWith> :Patient1 ;
+              :PGHDRequestedBy :Practitioner1 ;
+              :wasAuthorizedBy :Patient1 ;
+              <http://www.w3.org/ns/prov#endedAtTime> "2020-02-20T23:21:30"^^xsd:dateTime ;
+              <http://www.w3.org/ns/prov#startedAtTime> "2020-02-20T23:21:30"^^xsd:dateTime ;
+              :description "A request made by a practitioner to obtain patient data generated by wearable or software application" ;
+              :requestId "89128-192" .
+
+
+###  https://w3id.org/pghdprovo/Patient1
+:Patient1 rdf:type owl:NamedIndividual ,
+                   :Patient ;
+          <http://xmlns.com/foaf/0.1/givenName> "Nazif" ;
+          :address "1 Adamstown Dublin" ;
+          :phoneNumber "+12340000000" ;
+          :userid "14" .
+
+
+###  https://w3id.org/pghdprovo/PatientRelative1
+:PatientRelative1 rdf:type owl:NamedIndividual ,
+                           :PatientRelative ;
+                  <http://www.w3.org/ns/prov#actedOnBehalfOf> :Patient1 ;
+                  <http://xmlns.com/foaf/0.1/givenName> "Adam" ;
+                  :address "1 Adamstown, Dublin" ;
+                  :phoneNumber "+567800000000" ;
+                  :relationship "Sibling" ;
+                  :userid "13" .
+
+
+###  https://w3id.org/pghdprovo/Practitioner1
+:Practitioner1 rdf:type owl:NamedIndividual ,
+                        :Practitioner ;
+               :isAStaffOf :Organisation1 ;
+               <http://xmlns.com/foaf/0.1/givenName> "Abdullahi Kawu" ;
+               :address "50 Clondalkin Avenue, Dublin" ;
+               :phoneNumber "+91011000000" ;
+               :role "Doctor" ;
+               :userid "0873" .
+
+
+###  https://w3id.org/pghdprovo/Programme1
+:Programme1 rdf:type owl:NamedIndividual ,
+                     :Programme ;
+            :programmeName "30 minutes reading." .
+
+
+###  https://w3id.org/pghdprovo/Protocol1
+:Protocol1 rdf:type owl:NamedIndividual ,
+                    :Protocol ;
+           :bodySite "Left arm" .
+
+
+###  https://w3id.org/pghdprovo/Rating1
+:Rating1 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingOrgName "FDA" ;
+         :ratingScore 7.6 .
+
+
+###  https://w3id.org/pghdprovo/Sleep1
+:Sleep1 rdf:type owl:NamedIndividual ,
+                 :Sleep ;
+        <http://www.w3.org/ns/prov#wasAttributedTo> :Patient1 ;
+        <http://www.w3.org/ns/prov#wasDerivedFrom> :FitbitWearable ;
+        <http://www.w3.org/ns/prov#wasGeneratedBy> :PGHDRequest1 ;
+        :hasContextualInfo :ContextualDataInfo1 ,
+                           :Rating1 ,
+                           :State2 ;
+        :hasSleepStage :SleepStage1 ;
+        :wasCollectedBy :Patient1 ;
+        :asleepDuration 384 ;
+        :dataSource "Wearable" ;
+        :endTime "2020-02-21T07:03:30"^^xsd:dateTime ;
+        :sleepDate "2020-02-21T07:03:30"^^xsd:dateTime ;
+        :sleepDuration 986 ;
+        :sleepEfficiency 96 ;
+        :sleepLatency 0 ;
+        :startTime "2020-02-20T23:21:30"^^xsd:dateTime ;
+        :wakeupLatency 0 .
+
+
+###  https://w3id.org/pghdprovo/SleepStage1
+:SleepStage1 rdf:type owl:NamedIndividual ,
+                      :SleepStage ;
+             :hasContextualInfo :Rating1 ;
+             :wasCollectedBy :Patient1 ;
+             :deepsleepduration 104 ;
+             :lightsleepduration 205 ;
+             :remsleepduration 75 ;
+             :wakeupduration 78 .
+
+
+###  https://w3id.org/pghdprovo/State1
+:State1 rdf:type owl:NamedIndividual ,
+                 :State ;
+        :exerciseState "post-excercise" ;
+        :posture "sitting" .
+
+
+###  https://w3id.org/pghdprovo/State2
+:State2 rdf:type owl:NamedIndividual ,
+                 :State ;
+        :posture "Sleeping" .
+
+
+###  https://w3id.org/pghdprovo/application1
+:application1 rdf:type owl:NamedIndividual ,
+                       :Application ;
+              <http://www.w3.org/ns/prov#wasAttributedTo> :Practitioner1 ;
+              :appName "OpenEMR" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.w3.org/ns/prov#Organization>
+                <http://www.w3.org/ns/prov#Person>
+                <http://www.w3.org/ns/prov#SoftwareAgent>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <https://saref.etsi.org/core/Device>
+                :Application
+                :ContextualInfo
+                :PGHD
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ActivityLevel
+                :DailyActivity
+                :Sleep
+                :SleepStage
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Patient
+                :PatientRelative
+                :Practitioner
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Programme
+                :Protocol
+                :Rating
+                :State
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
