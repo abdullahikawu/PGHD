@@ -4,11 +4,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a></li>
-  <li><a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a></li>
   <li><a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a></li>
   <li><a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a></li>
-  <li><a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a></li>
   <li><a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a></li>
   <li><a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a></li>
@@ -21,8 +19,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
   <li><a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a></li>
   <li><a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a></li>
   <li><a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a></li>
-  <li><a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a></li>
-  <li><a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a></li>
   <li><a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">SoftwareAgent</a></li>
   <li><a href="#State" title="https://w3id.org/pghdprovo/State">state</a></li>
   <li><a href="#https://saref.etsi.org/saref4wear/User" title="https://saref.etsi.org/saref4wear/User">User</a></li>
@@ -66,45 +62,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dt>
    <dd>
     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="ActivityLevel">
-  <h3>Activity Level<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/ActivityLevel</p>
-  <div class="comment">
-   <span class="markdown">Levels: Stages of activity ranging from 0 - 6+ Metabolic Equivalents (MET)</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#fairlyActive" title="https://w3id.org/pghdprovo/fairlyActive">fairly active</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#lightlyActive" title="https://w3id.org/pghdprovo/lightlyActive">lightly active</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sedentary" title="https://w3id.org/pghdprovo/sedentary">sedentary</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#veryActive" title="https://w3id.org/pghdprovo/veryActive">very active</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasLevel" title="https://w3id.org/pghdprovo/hasLevel">has level</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#ActivityLevel1" title="https://w3id.org/pghdprovo/ActivityLevel1">Activity Level1</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>, <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -215,39 +172,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dt>
    <dd>
     <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="DailyActivity">
-  <h3>Daily Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/DailyActivity</p>
-  <div class="comment">
-   <span class="markdown">Physical activities carried out during the day.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#activityCalories" title="https://w3id.org/pghdprovo/activityCalories">actvity calories</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#elevation" title="https://w3id.org/pghdprovo/elevation">elevation</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#floors" title="https://w3id.org/pghdprovo/floors">floors</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLevel" title="https://w3id.org/pghdprovo/hasLevel">has level</a> <sup class="type-op" title="object property">op</sup>, <a href="#steps" title="https://w3id.org/pghdprovo/steps">steps</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#totalCalories" title="https://w3id.org/pghdprovo/totalCalories">total calories</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#DailyActivity1" title="https://w3id.org/pghdprovo/DailyActivity1">Daily Activity1</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>, <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>, <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -509,12 +433,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>, <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>, <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     is in domain of
    </dt>
    <dd>
@@ -611,6 +529,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <div class="entity" id="Programme">
   <h3>programme<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Programme</p>
+  <div class="comment">
+   <span class="markdown">Programme which is associated with the PGHD captured</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -641,6 +562,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <div class="entity" id="Protocol">
   <h3>protocol<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Protocol</p>
+  <div class="comment">
+   <span class="markdown">Protocol related to the captured PGHD such as Location of measurement otherwise known as body site, cuff link size, etc</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -671,6 +595,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <div class="entity" id="Rating">
   <h3>rating<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Rating</p>
+  <div class="comment">
+   <span class="markdown">A rating associated to the quality of PGHD usually specified by scores and as given from a recognised body like MEND</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -695,78 +622,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dt>
    <dd>
     <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Sleep">
-  <h3>Sleep<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Sleep</p>
-  <div class="comment">
-   <span class="markdown">Data related to user sleep.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#asleepDuration" title="https://w3id.org/pghdprovo/asleepDuration">asleep duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#date" title="https://w3id.org/pghdprovo/date">date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#dateOfSleep" title="https://w3id.org/pghdprovo/dateOfSleep">date of sleep</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#efficiency" title="https://w3id.org/pghdprovo/efficiency">efficiency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#enddate" title="https://w3id.org/pghdprovo/enddate">end date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#endTime" title="https://w3id.org/pghdprovo/endTime">end time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSleepStage" title="https://w3id.org/pghdprovo/hasSleepStage">has sleep stage</a> <sup class="type-op" title="object property">op</sup>, <a href="#minuteToFallAsleep" title="https://w3id.org/pghdprovo/minuteToFallAsleep">minute to fall asleep</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#minutesAfterWakeup" title="https://w3id.org/pghdprovo/minutesAfterWakeup">minutes after wakeup</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleepDate" title="https://w3id.org/pghdprovo/sleepDate">sleep date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleepDuration" title="https://w3id.org/pghdprovo/sleepDuration">sleep duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleepEfficiency" title="https://w3id.org/pghdprovo/sleepEfficiency">sleep efficiency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleep_efficiency" title="https://w3id.org/pghdprovo/sleep_efficiency">sleep efficiency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleepLatency" title="https://w3id.org/pghdprovo/sleepLatency">sleep latency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleep_latency" title="https://w3id.org/pghdprovo/sleep_latency">sleep latency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startdate" title="https://w3id.org/pghdprovo/startdate">start date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#startTime" title="https://w3id.org/pghdprovo/startTime">start time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#total_sleep_time" title="https://w3id.org/pghdprovo/total_sleep_time">total sleep time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wakeupLatency" title="https://w3id.org/pghdprovo/wakeupLatency">wakeup latency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wakeup_latency" title="https://w3id.org/pghdprovo/wakeup_latency">wakeup latency</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#Sleep1" title="https://w3id.org/pghdprovo/Sleep1">Sleep1</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>, <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="SleepStage">
-  <h3>Sleep Stage<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/SleepStage</p>
-  <div class="comment">
-   <span class="markdown">Data related to sleep stage.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#deepsleepduration" title="https://w3id.org/pghdprovo/deepsleepduration">deepsleepduration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#light" title="https://w3id.org/pghdprovo/light">light</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#lightsleepduration" title="https://w3id.org/pghdprovo/lightsleepduration">light sleep duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#rem" title="https://w3id.org/pghdprovo/rem">rem</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#remsleepduration" title="https://w3id.org/pghdprovo/remsleepduration">rem sleep duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wake" title="https://w3id.org/pghdprovo/wake">wake</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wakeupduration" title="https://w3id.org/pghdprovo/wakeupduration">wake up duration</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasSleepStage" title="https://w3id.org/pghdprovo/hasSleepStage">has sleep stage</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#SleepStage1" title="https://w3id.org/pghdprovo/SleepStage1">Sleep Stage1</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>, <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -802,6 +657,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <div class="entity" id="State">
   <h3>state<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/State</p>
+  <div class="comment">
+   <span class="markdown">This refers to the state of the patient at the time of the PGHD capture e.g posture or position, excercise state</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -863,12 +721,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    <dd>
     <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#FitbitWearable" title="https://w3id.org/pghdprovo/FitbitWearable">Fitbit Wearable</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
@@ -877,8 +729,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
   <li><a href="#http://www.w3.org/ns/prov#actedOnBehalfOf" title="http://www.w3.org/ns/prov#actedOnBehalfOf">actedOnBehalfOf</a></li>
   <li><a href="#hasContextualInfo" title="https://w3id.org/pghdprovo/hasContextualInfo">Contain Contextual Info</a></li>
   <li><a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated"> <span>generated</span> </a></li>
-  <li><a href="#hasLevel" title="https://w3id.org/pghdprovo/hasLevel">has level</a></li>
-  <li><a href="#hasSleepStage" title="https://w3id.org/pghdprovo/hasSleepStage">has sleep stage</a></li>
   <li><a href="#isAStaffOf" title="https://w3id.org/pghdprovo/isAStaffOf">is a staff of</a></li>
   <li><a href="#PGHDRequestedBy" title="https://w3id.org/pghdprovo/PGHDRequestedBy">PGHD requested by</a></li>
   <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a></li>
@@ -959,52 +809,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasLevel">
-  <h3>has level<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/hasLevel</p>
-  <div class="comment">
-   <span class="markdown">Record of daily physical Activity levels.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasSleepStage">
-  <h3>has sleep stage<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/hasSleepStage</p>
-  <div class="comment">
-   <span class="markdown">Record of sleep Stages.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1299,42 +1103,20 @@ This section provides details for each class and property defined by PGHD-PROVO 
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#requestId" title="https://w3id.org/pghdprovo/requestId">activity id</a></li>
-  <li><a href="#activityCalories" title="https://w3id.org/pghdprovo/activityCalories">actvity calories</a></li>
   <li><a href="#address" title="https://w3id.org/pghdprovo/address">address</a></li>
   <li><a href="#appName" title="https://w3id.org/pghdprovo/appName">app name</a></li>
-  <li><a href="#asleepDuration" title="https://w3id.org/pghdprovo/asleepDuration">asleep duration</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/birthday" title="http://xmlns.com/foaf/0.1/birthday">birthday</a></li>
   <li><a href="#bodySite" title="https://w3id.org/pghdprovo/bodySite">Body Site</a></li>
-  <li><a href="#calories" title="https://w3id.org/pghdprovo/calories">calories</a></li>
-  <li><a href="#caloriesOut" title="https://w3id.org/pghdprovo/caloriesOut">calories out</a></li>
   <li><a href="#dataSource" title="https://w3id.org/pghdprovo/dataSource">data source</a></li>
-  <li><a href="#date" title="https://w3id.org/pghdprovo/date">date</a></li>
-  <li><a href="#dateOfSleep" title="https://w3id.org/pghdprovo/dateOfSleep">date of sleep</a></li>
-  <li><a href="#deepsleepduration" title="https://w3id.org/pghdprovo/deepsleepduration">deepsleepduration</a></li>
   <li><a href="#description" title="https://w3id.org/pghdprovo/description">description</a></li>
   <li><a href="#deviceModel" title="https://w3id.org/pghdprovo/deviceModel">device model</a></li>
   <li><a href="#deviceName" title="https://w3id.org/pghdprovo/deviceName">device name</a></li>
-  <li><a href="#efficiency" title="https://w3id.org/pghdprovo/efficiency">efficiency</a></li>
-  <li><a href="#elevation" title="https://w3id.org/pghdprovo/elevation">elevation</a></li>
-  <li><a href="#enddate" title="https://w3id.org/pghdprovo/enddate">end date</a></li>
-  <li><a href="#endTime" title="https://w3id.org/pghdprovo/endTime">end time</a></li>
   <li><a href="#http://www.w3.org/ns/prov#endedAtTime" title="http://www.w3.org/ns/prov#endedAtTime">endedAtTime</a></li>
   <li><a href="#exerciseState" title="https://w3id.org/pghdprovo/exerciseState">exercise state</a></li>
-  <li><a href="#fairlyActive" title="https://w3id.org/pghdprovo/fairlyActive">fairly active</a></li>
-  <li><a href="#fairlyActiveMinutes" title="https://w3id.org/pghdprovo/fairlyActiveMinutes">fairly active minutes</a></li>
-  <li><a href="#floors" title="https://w3id.org/pghdprovo/floors">floors</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/gender" title="http://xmlns.com/foaf/0.1/gender">gender</a></li>
   <li><a href="#http://www.w3.org/ns/prov#generatedAtTime" title="http://www.w3.org/ns/prov#generatedAtTime">generatedAtTime</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/givenName" title="http://xmlns.com/foaf/0.1/givenName">Given name</a></li>
-  <li><a href="#intense" title="https://w3id.org/pghdprovo/intense">intense</a></li>
-  <li><a href="#light" title="https://w3id.org/pghdprovo/light">light</a></li>
-  <li><a href="#lightsleepduration" title="https://w3id.org/pghdprovo/lightsleepduration">light sleep duration</a></li>
-  <li><a href="#lightlyActive" title="https://w3id.org/pghdprovo/lightlyActive">lightly active</a></li>
-  <li><a href="#lightlyActiveMinutes" title="https://w3id.org/pghdprovo/lightlyActiveMinutes">lightly active minutes</a></li>
   <li><a href="#locationOfPatient" title="https://w3id.org/pghdprovo/locationOfPatient">location of patient</a></li>
-  <li><a href="#minuteToFallAsleep" title="https://w3id.org/pghdprovo/minuteToFallAsleep">minute to fall asleep</a></li>
-  <li><a href="#minutesAfterWakeup" title="https://w3id.org/pghdprovo/minutesAfterWakeup">minutes after wakeup</a></li>
-  <li><a href="#moderate" title="https://w3id.org/pghdprovo/moderate">moderate</a></li>
   <li><a href="#orgAddress" title="https://w3id.org/pghdprovo/orgAddress">organization address</a></li>
   <li><a href="#orgEmail" title="https://w3id.org/pghdprovo/orgEmail">organization email</a></li>
   <li><a href="#orgId" title="https://w3id.org/pghdprovo/orgId">organization id</a></li>
@@ -1345,30 +1127,9 @@ This section provides details for each class and property defined by PGHD-PROVO 
   <li><a href="#ratingOrgName" title="https://w3id.org/pghdprovo/ratingOrgName">rating organization name</a></li>
   <li><a href="#ratingScore" title="https://w3id.org/pghdprovo/ratingScore">rating score</a></li>
   <li><a href="#relationship" title="https://w3id.org/pghdprovo/relationship">relationship</a></li>
-  <li><a href="#rem" title="https://w3id.org/pghdprovo/rem">rem</a></li>
-  <li><a href="#remsleepduration" title="https://w3id.org/pghdprovo/remsleepduration">rem sleep duration</a></li>
   <li><a href="#role" title="https://w3id.org/pghdprovo/role">role</a></li>
-  <li><a href="#sedentary" title="https://w3id.org/pghdprovo/sedentary">sedentary</a></li>
-  <li><a href="#sleepDate" title="https://w3id.org/pghdprovo/sleepDate">sleep date</a></li>
-  <li><a href="#sleepDuration" title="https://w3id.org/pghdprovo/sleepDuration">sleep duration</a></li>
-  <li><a href="#sleepEfficiency" title="https://w3id.org/pghdprovo/sleepEfficiency">sleep efficiency</a></li>
-  <li><a href="#sleep_efficiency" title="https://w3id.org/pghdprovo/sleep_efficiency">sleep efficiency</a></li>
-  <li><a href="#sleepLatency" title="https://w3id.org/pghdprovo/sleepLatency">sleep latency</a></li>
-  <li><a href="#sleep_latency" title="https://w3id.org/pghdprovo/sleep_latency">sleep latency</a></li>
-  <li><a href="#soft" title="https://w3id.org/pghdprovo/soft">soft</a></li>
-  <li><a href="#startdate" title="https://w3id.org/pghdprovo/startdate">start date</a></li>
-  <li><a href="#startTime" title="https://w3id.org/pghdprovo/startTime">start time</a></li>
   <li><a href="#http://www.w3.org/ns/prov#startedAtTime" title="http://www.w3.org/ns/prov#startedAtTime">startedAtTime</a></li>
-  <li><a href="#steps" title="https://w3id.org/pghdprovo/steps">steps</a></li>
-  <li><a href="#totalCalories" title="https://w3id.org/pghdprovo/totalCalories">total calories</a></li>
-  <li><a href="#total_sleep_time" title="https://w3id.org/pghdprovo/total_sleep_time">total sleep time</a></li>
   <li><a href="#userid" title="https://w3id.org/pghdprovo/userid">user id</a></li>
-  <li><a href="#veryActive" title="https://w3id.org/pghdprovo/veryActive">very active</a></li>
-  <li><a href="#veryActiveMinutes" title="https://w3id.org/pghdprovo/veryActiveMinutes">very active minutes</a></li>
-  <li><a href="#wake" title="https://w3id.org/pghdprovo/wake">wake</a></li>
-  <li><a href="#wakeupduration" title="https://w3id.org/pghdprovo/wakeupduration">wake up duration</a></li>
-  <li><a href="#wakeupLatency" title="https://w3id.org/pghdprovo/wakeupLatency">wakeup latency</a></li>
-  <li><a href="#wakeup_latency" title="https://w3id.org/pghdprovo/wakeup_latency">wakeup latency</a></li>
  </ul>
  <div class="entity" id="requestId">
   <h3>activity id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
@@ -1383,35 +1144,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="activityCalories">
-  <h3>actvity calories<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/activityCalories</p>
-  <div class="comment">
-   <span class="markdown">The number of calories burned associated with an activity.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#calories" title="https://w3id.org/pghdprovo/calories">calories</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1450,39 +1182,16 @@ This section provides details for each class and property defined by PGHD-PROVO 
   <div class="description">
    <dl>
     <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
      has domain
     </dt>
     <dd>
      <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="asleepDuration">
-  <h3>asleep duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/asleepDuration</p>
-  <div class="comment">
-   <span class="markdown">Length of the sleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#total_sleep_time" title="https://w3id.org/pghdprovo/total_sleep_time">total sleep time</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1544,52 +1253,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dl>
   </div>
  </div>
- <div class="entity" id="calories">
-  <h3>calories<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/calories</p>
-  <div class="comment">
-   <span class="markdown">The number of calories burned associated with an activity.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#activityCalories" title="https://w3id.org/pghdprovo/activityCalories">actvity calories</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="caloriesOut">
-  <h3>calories out<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/caloriesOut</p>
-  <div class="comment">
-   <span class="markdown">Total calories burned. Obtained by adding active calories and passive calories</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#totalCalories" title="https://w3id.org/pghdprovo/totalCalories">total calories</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="dataSource">
   <h3>data source<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/dataSource</p>
@@ -1603,87 +1266,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="date">
-  <h3>date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/date</p>
-  <div class="comment">
-   <span class="markdown">The date the sleep was logged.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleepDate" title="https://w3id.org/pghdprovo/sleepDate">sleep date</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="dateOfSleep">
-  <h3>date of sleep<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/dateOfSleep</p>
-  <div class="comment">
-   <span class="markdown">The date the sleep was logged.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleepDate" title="https://w3id.org/pghdprovo/sleepDate">sleep date</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="deepsleepduration">
-  <h3>deepsleepduration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/deepsleepduration</p>
-  <div class="comment">
-   <span class="markdown">Duration in deep sleep state.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1751,116 +1333,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dl>
   </div>
  </div>
- <div class="entity" id="efficiency">
-  <h3>efficiency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/efficiency</p>
-  <div class="comment">
-   <span class="markdown">A relative measurement of the time spent asleep to the total time spent in bed.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleepEfficiency" title="https://w3id.org/pghdprovo/sleepEfficiency">sleep efficiency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="elevation">
-  <h3>elevation<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/elevation</p>
-  <div class="comment">
-   <span class="markdown">The elevation traveled for the day.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="enddate">
-  <h3>end date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/enddate</p>
-  <div class="comment">
-   <span class="markdown">Time the sleep log ended.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#endTime" title="https://w3id.org/pghdprovo/endTime">end time</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="endTime">
-  <h3>end time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/endTime</p>
-  <div class="comment">
-   <span class="markdown">Time the sleep log ended.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#enddate" title="https://w3id.org/pghdprovo/enddate">end date</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="http://www.w3.org/ns/prov#endedAtTime">
   <h3>endedAtTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#endedAtTime</p>
@@ -1911,81 +1383,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="fairlyActive">
-  <h3>fairly active<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/fairlyActive</p>
-  <div class="comment">
-   <span class="markdown">Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#fairlyActiveMinutes" title="https://w3id.org/pghdprovo/fairlyActiveMinutes">fairly active minutes</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#moderate" title="https://w3id.org/pghdprovo/moderate">moderate</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="fairlyActiveMinutes">
-  <h3>fairly active minutes<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/fairlyActiveMinutes</p>
-  <div class="comment">
-   <span class="markdown">Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#fairlyActive" title="https://w3id.org/pghdprovo/fairlyActive">fairly active</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="floors">
-  <h3>floors<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/floors</p>
-  <div class="comment">
-   <span class="markdown">The equivalent floors climbed for the day</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2067,133 +1464,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dd>
   </dl>
  </div>
- <div class="entity" id="intense">
-  <h3>intense<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/intense</p>
-  <div class="comment">
-   <span class="markdown">Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="light">
-  <h3>light<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/light</p>
-  <div class="comment">
-   <span class="markdown">Duration in light sleep state.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#lightsleepduration" title="https://w3id.org/pghdprovo/lightsleepduration">light sleep duration</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="lightsleepduration">
-  <h3>light sleep duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/lightsleepduration</p>
-  <div class="comment">
-   <span class="markdown">Duration in light sleep state.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#light" title="https://w3id.org/pghdprovo/light">light</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="lightlyActive">
-  <h3>lightly active<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/lightlyActive</p>
-  <div class="comment">
-   <span class="markdown">Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#lightlyActiveMinutes" title="https://w3id.org/pghdprovo/lightlyActiveMinutes">lightly active minutes</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#soft" title="https://w3id.org/pghdprovo/soft">soft</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="lightlyActiveMinutes">
-  <h3>lightly active minutes<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/lightlyActiveMinutes</p>
-  <div class="comment">
-   <span class="markdown">Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#lightlyActive" title="https://w3id.org/pghdprovo/lightlyActive">lightly active</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="locationOfPatient">
   <h3>location of patient<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/locationOfPatient</p>
@@ -2213,87 +1483,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="minuteToFallAsleep">
-  <h3>minute to fall asleep<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/minuteToFallAsleep</p>
-  <div class="comment">
-   <span class="markdown">The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleep_latency" title="https://w3id.org/pghdprovo/sleep_latency">sleep latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="minutesAfterWakeup">
-  <h3>minutes after wakeup<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/minutesAfterWakeup</p>
-  <div class="comment">
-   <span class="markdown">Time spent in bed after waking up.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#wakeupLatency" title="https://w3id.org/pghdprovo/wakeupLatency">wakeup latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="moderate">
-  <h3>moderate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/moderate</p>
-  <div class="comment">
-   <span class="markdown">Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#fairlyActive" title="https://w3id.org/pghdprovo/fairlyActive">fairly active</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
    </dl>
   </div>
@@ -2522,64 +1711,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dl>
   </div>
  </div>
- <div class="entity" id="rem">
-  <h3>rem<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/rem</p>
-  <div class="comment">
-   <span class="markdown">A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#remsleepduration" title="https://w3id.org/pghdprovo/remsleepduration">rem sleep duration</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="remsleepduration">
-  <h3>rem sleep duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/remsleepduration</p>
-  <div class="comment">
-   <span class="markdown">A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#rem" title="https://w3id.org/pghdprovo/rem">rem</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="role">
   <h3>role<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/role</p>
@@ -2593,278 +1724,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sedentary">
-  <h3>sedentary<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sedentary</p>
-  <div class="comment">
-   <span class="markdown">Duration of sedentary activities. Activities with a Metabolic Equivalents (MET) value of less than 1.5</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleepDate">
-  <h3>sleep date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleepDate</p>
-  <div class="comment">
-   <span class="markdown">The date the sleep was logged.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#date" title="https://w3id.org/pghdprovo/date">date</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#dateOfSleep" title="https://w3id.org/pghdprovo/dateOfSleep">date of sleep</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleepDuration">
-  <h3>sleep duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleepDuration</p>
-  <div class="comment">
-   <span class="markdown">Length of the sleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleepEfficiency">
-  <h3>sleep efficiency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleepEfficiency</p>
-  <div class="comment">
-   <span class="markdown">A relative measurement of the time spent asleep to the total time spent in bed.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#efficiency" title="https://w3id.org/pghdprovo/efficiency">efficiency</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleep_efficiency" title="https://w3id.org/pghdprovo/sleep_efficiency">sleep efficiency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleep_efficiency">
-  <h3>sleep efficiency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleep_efficiency</p>
-  <div class="comment">
-   <span class="markdown">A relative measurement of the time spent asleep to the total time spent in bed.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleepEfficiency" title="https://w3id.org/pghdprovo/sleepEfficiency">sleep efficiency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleepLatency">
-  <h3>sleep latency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleepLatency</p>
-  <div class="comment">
-   <span class="markdown">The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#sleep_latency" title="https://w3id.org/pghdprovo/sleep_latency">sleep latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="sleep_latency">
-  <h3>sleep latency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/sleep_latency</p>
-  <div class="comment">
-   <span class="markdown">The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#minuteToFallAsleep" title="https://w3id.org/pghdprovo/minuteToFallAsleep">minute to fall asleep</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#sleepLatency" title="https://w3id.org/pghdprovo/sleepLatency">sleep latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="soft">
-  <h3>soft<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/soft</p>
-  <div class="comment">
-   <span class="markdown">Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#lightlyActive" title="https://w3id.org/pghdprovo/lightlyActive">lightly active</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="startdate">
-  <h3>start date<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/startdate</p>
-  <div class="comment">
-   <span class="markdown">Time the sleep log begins. Also as "sleep time" Measurement of the time at which sleep begins.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#startTime" title="https://w3id.org/pghdprovo/startTime">start time</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="startTime">
-  <h3>start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/startTime</p>
-  <div class="comment">
-   <span class="markdown">Time the sleep log begins. Also as "sleep time" Measurement of the time at which sleep begins.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#startdate" title="https://w3id.org/pghdprovo/startdate">start date</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2900,87 +1759,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
    </dl>
   </div>
  </div>
- <div class="entity" id="steps">
-  <h3>steps<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/steps</p>
-  <div class="comment">
-   <span class="markdown">Total steps count for the day.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="totalCalories">
-  <h3>total calories<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/totalCalories</p>
-  <div class="comment">
-   <span class="markdown">Total calories burned. Obtained by adding active calories and passive calories</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#caloriesOut" title="https://w3id.org/pghdprovo/caloriesOut">calories out</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DailyActivity" title="https://w3id.org/pghdprovo/DailyActivity">Daily Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="total_sleep_time">
-  <h3>total sleep time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/total_sleep_time</p>
-  <div class="comment">
-   <span class="markdown">Length of the sleep.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#asleepDuration" title="https://w3id.org/pghdprovo/asleepDuration">asleep duration</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="userid">
   <h3>user id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/pghdprovo/userid</p>
@@ -2994,174 +1772,6 @@ This section provides details for each class and property defined by PGHD-PROVO 
     </dt>
     <dd>
      <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="veryActive">
-  <h3>very active<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/veryActive</p>
-  <div class="comment">
-   <span class="markdown">Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#veryActiveMinutes" title="https://w3id.org/pghdprovo/veryActiveMinutes">very active minutes</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ActivityLevel" title="https://w3id.org/pghdprovo/ActivityLevel">Activity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="veryActiveMinutes">
-  <h3>very active minutes<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/veryActiveMinutes</p>
-  <div class="comment">
-   <span class="markdown">Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#veryActive" title="https://w3id.org/pghdprovo/veryActive">very active</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/dailyActivityProperty" target="_blank" title="https://w3id.org/pghdprovo/dailyActivityProperty">daily Activity Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="wake">
-  <h3>wake<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wake</p>
-  <div class="comment">
-   <span class="markdown">A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#wakeupduration" title="https://w3id.org/pghdprovo/wakeupduration">wake up duration</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="wakeupduration">
-  <h3>wake up duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wakeupduration</p>
-  <div class="comment">
-   <span class="markdown">A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#wake" title="https://w3id.org/pghdprovo/wake">wake</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#SleepStage" title="https://w3id.org/pghdprovo/SleepStage">Sleep Stage</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="wakeupLatency">
-  <h3>wakeup latency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wakeupLatency</p>
-  <div class="comment">
-   <span class="markdown">Time spent in bed after waking up.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#minutesAfterWakeup" title="https://w3id.org/pghdprovo/minutesAfterWakeup">minutes after wakeup</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wakeup_latency" title="https://w3id.org/pghdprovo/wakeup_latency">wakeup latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="wakeup_latency">
-  <h3>wakeup latency<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wakeup_latency</p>
-  <div class="comment">
-   <span class="markdown">Time spent in bed after waking up.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#wakeupLatency" title="https://w3id.org/pghdprovo/wakeupLatency">wakeup latency</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="https://w3id.org/pghdprovo/sleepProperty" target="_blank" title="https://w3id.org/pghdprovo/sleepProperty">sleep Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sleep" title="https://w3id.org/pghdprovo/Sleep">Sleep</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>

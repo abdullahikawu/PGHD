@@ -325,30 +325,6 @@
     
 
 
-    <!-- https://w3id.org/pghdprovo/hasLevel -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pghdprovo/hasLevel">
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:range rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <rdfs:comment>Record of daily physical Activity levels.</rdfs:comment>
-        <rdfs:label>has level</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/hasSleepStage -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/pghdprovo/hasSleepStage">
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:range rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>Record of sleep Stages.</rdfs:comment>
-        <rdfs:label>has sleep stage</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/isAStaffOf -->
 
 
@@ -499,20 +475,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/activityCalories -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/activityCalories">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/calories"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:comment>The number of calories burned associated with an activity.</rdfs:comment>
-        <rdfs:label>actvity calories</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/address -->
 
 
@@ -529,22 +491,10 @@ activity.</rdfs:comment>
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/appName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Application"/>
         <rdfs:comment>The name of the software application utilised by a patient and practitioner.</rdfs:comment>
         <rdfs:label>app name</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/asleepDuration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/asleepDuration">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/total_sleep_time"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Length of the sleep.</rdfs:comment>
-        <rdfs:label>asleep duration</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -561,38 +511,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/calories -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/calories">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>The number of calories burned associated with an activity.</rdfs:comment>
-        <rdfs:label>calories</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/caloriesOut -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/caloriesOut">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/totalCalories"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Total calories burned. Obtained by adding active calories and passive calories</rdfs:comment>
-        <rdfs:label>calories out</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/dailyActivityProperty -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-    
-
-
     <!-- https://w3id.org/pghdprovo/dataSource -->
 
 
@@ -600,47 +518,6 @@ activity.</rdfs:comment>
         <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/PGHD"/>
         <rdfs:comment>An entity that produce a digital data.</rdfs:comment>
         <rdfs:label>data source</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/date -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/date">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleepDate"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The date the sleep was logged.</rdfs:comment>
-        <rdfs:label>date</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/dateOfSleep -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/dateOfSleep">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleepDate"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The date the sleep was logged.</rdfs:comment>
-        <rdfs:label>date of sleep</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/deepsleepduration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/deepsleepduration">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>Duration in deep sleep state.</rdfs:comment>
-        <rdfs:label>deepsleepduration</rdfs:label>
-        <propertySource>withings</propertySource>
     </owl:DatatypeProperty>
     
 
@@ -680,61 +557,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/efficiency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/efficiency">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleepEfficiency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>A relative measurement of the time spent asleep to the total time spent in bed.</rdfs:comment>
-        <rdfs:label>efficiency</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/elevation -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/elevation">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:comment>The elevation traveled for the day.</rdfs:comment>
-        <rdfs:label>elevation</rdfs:label>
-        <propertySource>fitbit</propertySource>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/endTime -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/endTime">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/enddate"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time the sleep log ended.</rdfs:comment>
-        <rdfs:label>end time</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/enddate -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/enddate">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time the sleep log ended.</rdfs:comment>
-        <rdfs:label>end date</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/exerciseState -->
 
 
@@ -747,109 +569,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/fairlyActive -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/fairlyActive">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/fairlyActiveMinutes"/>
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/moderate"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <rdfs:comment>Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</rdfs:comment>
-        <rdfs:label>fairly active</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/fairlyActiveMinutes -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/fairlyActiveMinutes">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</rdfs:comment>
-        <rdfs:label>fairly active minutes</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/floors -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/floors">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:comment>The equivalent floors climbed for the day</rdfs:comment>
-        <rdfs:label>floors</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/intense -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/intense">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</rdfs:comment>
-        <rdfs:label>intense</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/light -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/light">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/lightsleepduration"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>Duration in light sleep state.</rdfs:comment>
-        <rdfs:label>light</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/lightlyActive -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/lightlyActive">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/lightlyActiveMinutes"/>
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/soft"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <rdfs:comment>Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</rdfs:comment>
-        <rdfs:label>lightly active</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/lightlyActiveMinutes -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/lightlyActiveMinutes">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</rdfs:comment>
-        <rdfs:label>lightly active minutes</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/lightsleepduration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/lightsleepduration">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>Duration in light sleep state.</rdfs:comment>
-        <rdfs:label>light sleep duration</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/locationOfPatient -->
 
 
@@ -858,46 +577,6 @@ activity.</rdfs:comment>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Location of a patient during data collection.</rdfs:comment>
         <rdfs:label>location of patient</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/minuteToFallAsleep -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/minuteToFallAsleep">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleep_latency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</rdfs:comment>
-        <rdfs:label>minute to fall asleep</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/minutesAfterWakeup -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/minutesAfterWakeup">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/wakeupLatency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time spent in bed after waking up.</rdfs:comment>
-        <rdfs:label>minutes after wakeup</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/moderate -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/moderate">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of fairly activities. Activities with a Metabolic Equivalents (MET) value of 3.0 - 6.0</rdfs:comment>
-        <rdfs:label>moderate</rdfs:label>
-        <propertySource>withings</propertySource>
     </owl:DatatypeProperty>
     
 
@@ -1021,33 +700,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/rem -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/rem">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/remsleepduration"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming.</rdfs:comment>
-        <rdfs:label>rem</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/remsleepduration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/remsleepduration">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>A stage of sleep characterized by rapid movements of the eye and low voltage fast pattern EEG. It is usually associated with dreaming.</rdfs:comment>
-        <rdfs:label>rem sleep duration</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/requestId -->
 
 
@@ -1070,179 +722,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/sedentary -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sedentary">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <rdfs:comment>Duration of sedentary activities. Activities with  a Metabolic Equivalents (MET) value of less than 1.5</rdfs:comment>
-        <rdfs:label>sedentary</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleepDate -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleepDate">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The date the sleep was logged.</rdfs:comment>
-        <rdfs:label>sleep date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleepDuration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleepDuration">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Length of the sleep.</rdfs:comment>
-        <rdfs:label>sleep duration</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleepEfficiency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleepEfficiency">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleep_efficiency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>A relative measurement of the time spent asleep to the total time spent in bed.</rdfs:comment>
-        <rdfs:label>sleep efficiency</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleepLatency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleepLatency">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/sleep_latency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</rdfs:comment>
-        <rdfs:label>sleep latency</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleepProperty -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleepProperty"/>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleep_efficiency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleep_efficiency">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>A relative measurement of the time spent asleep to the total time spent in bed.</rdfs:comment>
-        <rdfs:label>sleep efficiency</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/sleep_latency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/sleep_latency">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>The total number of minutes before the user falls asleep. Amount of time, usually recorded in minutes, between going to bed and falling asleep.</rdfs:comment>
-        <rdfs:label>sleep latency</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/soft -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/soft">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of light activities. Activities with a Metabolic Equivalents (MET) value of 1.5 - 3.0</rdfs:comment>
-        <rdfs:label>soft</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/startTime -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/startTime">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/startdate"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time the sleep log begins. Also as &quot;sleep time&quot; Measurement of the time at which sleep begins.</rdfs:comment>
-        <rdfs:label>start time</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/startdate -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/startdate">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time the sleep log begins. Also as &quot;sleep time&quot; Measurement of the time at which sleep begins.</rdfs:comment>
-        <rdfs:label>start date</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/steps -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/steps">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:comment>Total steps count for the day.</rdfs:comment>
-        <rdfs:label>steps</rdfs:label>
-        <propertySource>fitbit</propertySource>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/totalCalories -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/totalCalories">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <rdfs:comment>Total calories burned. Obtained by adding active calories and passive calories</rdfs:comment>
-        <rdfs:label>total calories</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/total_sleep_time -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/total_sleep_time">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Length of the sleep.</rdfs:comment>
-        <rdfs:label>total sleep time</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/pghdprovo/userid -->
 
 
@@ -1250,84 +729,6 @@ activity.</rdfs:comment>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Person"/>
         <rdfs:comment>User identifier.</rdfs:comment>
         <rdfs:label>user id</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/veryActive -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/veryActive">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/veryActiveMinutes"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <rdfs:comment>Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</rdfs:comment>
-        <rdfs:label>very active</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/veryActiveMinutes -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/veryActiveMinutes">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/dailyActivityProperty"/>
-        <rdfs:comment>Duration of very active activities. Activities with a Metabolic Equivalents (MET) value greater than 6.0.</rdfs:comment>
-        <rdfs:label>very active minutes</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/wake -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/wake">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/wakeupduration"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset.</rdfs:comment>
-        <rdfs:label>wake</rdfs:label>
-        <propertySource>fitbit</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/wakeupLatency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/wakeupLatency">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/pghdprovo/wakeup_latency"/>
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time spent in bed after waking up.</rdfs:comment>
-        <rdfs:label>wakeup latency</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/wakeup_latency -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/wakeup_latency">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <rdfs:comment>Time spent in bed after waking up.</rdfs:comment>
-        <rdfs:label>wakeup latency</rdfs:label>
-        <propertySource>withings</propertySource>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/wakeupduration -->
-
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/pghdprovo/wakeupduration">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/pghdprovo/sleepProperty"/>
-        <rdfs:domain rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <rdfs:comment>A measurement of the sum of durations of wakefulness episodes throughout the night, not including the wakefulness before sleep onset.</rdfs:comment>
-        <rdfs:label>wake up duration</rdfs:label>
-        <propertySource>withings</propertySource>
     </owl:DatatypeProperty>
     
 
@@ -1554,45 +955,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/ActivityLevel -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pghdprovo/ActivityLevel">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/PGHD"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/fairlyActive"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/lightlyActive"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/sedentary"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/veryActive"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Levels: Stages of activity ranging from 0 - 6+ Metabolic Equivalents (MET)</rdfs:comment>
-        <rdfs:label>Activity Level</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/pghdprovo/Application -->
 
 
@@ -1622,58 +984,6 @@ activity.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/pghdprovo/ContextualInfo">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:label>contextual information</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/DailyActivity -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pghdprovo/DailyActivity">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/PGHD"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/hasLevel"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/activityCalories"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/elevation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/floors"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/steps"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/totalCalories"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Physical activities carried out during the day.</rdfs:comment>
-        <rdfs:label>Daily Activity</rdfs:label>
     </owl:Class>
     
 
@@ -1843,6 +1153,7 @@ activity.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pghdprovo/Programme">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/ContextualInfo"/>
+        <rdfs:comment>Programme which is associated with the PGHD captured</rdfs:comment>
         <rdfs:label>programme</rdfs:label>
     </owl:Class>
     
@@ -1853,6 +1164,7 @@ activity.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pghdprovo/Protocol">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/ContextualInfo"/>
+        <rdfs:comment>Protocol related to the captured PGHD such as Location of measurement otherwise known as body site, cuff link size, etc</rdfs:comment>
         <rdfs:label>protocol</rdfs:label>
     </owl:Class>
     
@@ -1863,119 +1175,8 @@ activity.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pghdprovo/Rating">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/ContextualInfo"/>
+        <rdfs:comment>A rating associated to the quality of PGHD usually specified by scores and as given from a recognised body like MEND</rdfs:comment>
         <rdfs:label>rating</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/Sleep -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pghdprovo/Sleep">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/PGHD"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/hasSleepStage"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/asleepDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/endTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/sleepDate"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/sleepDuration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/sleepEfficiency"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/sleepLatency"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/startTime"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/wakeupLatency"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Data related to user sleep.</rdfs:comment>
-        <rdfs:label>Sleep</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/SleepStage -->
-
-
-    <owl:Class rdf:about="https://w3id.org/pghdprovo/SleepStage">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/PGHD"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/deepsleepduration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/lightsleepduration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/remsleepduration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/pghdprovo/wakeupduration"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>Data related to sleep stage.</rdfs:comment>
-        <rdfs:label>Sleep Stage</rdfs:label>
     </owl:Class>
     
 
@@ -1985,6 +1186,7 @@ activity.</rdfs:comment>
 
     <owl:Class rdf:about="https://w3id.org/pghdprovo/State">
         <rdfs:subClassOf rdf:resource="https://w3id.org/pghdprovo/ContextualInfo"/>
+        <rdfs:comment>This refers to the state of the patient at the time of the PGHD capture e.g posture or position, excercise state</rdfs:comment>
         <rdfs:label>state</rdfs:label>
     </owl:Class>
     
@@ -1999,21 +1201,6 @@ activity.</rdfs:comment>
      -->
 
 
-    
-
-
-    <!-- https://w3id.org/pghdprovo/ActivityLevel1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/ActivityLevel1">
-        <rdf:type rdf:resource="https://w3id.org/pghdprovo/ActivityLevel"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/Rating1"/>
-        <wasCollectedBy rdf:resource="https://w3id.org/pghdprovo/PatientRelative1"/>
-        <fairlyActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</fairlyActive>
-        <lightlyActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</lightlyActive>
-        <sedentary rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">802</sedentary>
-        <veryActive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</veryActive>
-    </owl:NamedIndividual>
     
 
 
@@ -2038,47 +1225,13 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/DailyActivity1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/DailyActivity1">
-        <rdf:type rdf:resource="https://w3id.org/pghdprovo/DailyActivity"/>
-        <prov:wasAttributedTo rdf:resource="https://w3id.org/pghdprovo/Patient1"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/pghdprovo/FitbitWearable"/>
-        <prov:wasGeneratedBy rdf:resource="https://w3id.org/pghdprovo/PGHDRequest1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/ContextualDataInfo1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/Protocol1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/Rating1"/>
-        <hasLevel rdf:resource="https://w3id.org/pghdprovo/ActivityLevel1"/>
-        <wasCollectedBy rdf:resource="https://w3id.org/pghdprovo/PatientRelative1"/>
-        <activityCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">525</activityCalories>
-        <dataSource>Wearable</dataSource>
-        <elevation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</elevation>
-        <floors rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</floors>
-        <steps rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1698</steps>
-        <totalCalories rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2628</totalCalories>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/FitbitWearable -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/FitbitWearable">
-        <rdf:type rdf:resource="https://saref.etsi.org/saref4wear/Wearable"/>
-        <deviceModel>Fitbit Versa 4</deviceModel>
-        <deviceName>Fitbit</deviceName>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pghdprovo/Organisation1 -->
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/Organisation1">
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Organization"/>
         <orgAddress>1 Grangegorman Dublin</orgAddress>
-        <orgEmail xml:lang="tudublin.ie">tudmedics</orgEmail>
+        <orgEmail>tudmedics@tudublin.ie</orgEmail>
         <orgId>01</orgId>
         <orgName rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">TU Dublin Medical Center</orgName>
     </owl:NamedIndividual>
@@ -2176,47 +1329,6 @@ activity.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/pghdprovo/Sleep1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/Sleep1">
-        <rdf:type rdf:resource="https://w3id.org/pghdprovo/Sleep"/>
-        <prov:wasAttributedTo rdf:resource="https://w3id.org/pghdprovo/Patient1"/>
-        <prov:wasDerivedFrom rdf:resource="https://w3id.org/pghdprovo/FitbitWearable"/>
-        <prov:wasGeneratedBy rdf:resource="https://w3id.org/pghdprovo/PGHDRequest1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/ContextualDataInfo1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/Rating1"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/State2"/>
-        <hasSleepStage rdf:resource="https://w3id.org/pghdprovo/SleepStage1"/>
-        <wasCollectedBy rdf:resource="https://w3id.org/pghdprovo/Patient1"/>
-        <asleepDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">384</asleepDuration>
-        <dataSource>Wearable</dataSource>
-        <endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-21T07:03:30</endTime>
-        <sleepDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-21T07:03:30</sleepDate>
-        <sleepDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">986</sleepDuration>
-        <sleepEfficiency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">96</sleepEfficiency>
-        <sleepLatency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</sleepLatency>
-        <startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-02-20T23:21:30</startTime>
-        <wakeupLatency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</wakeupLatency>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/pghdprovo/SleepStage1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/pghdprovo/SleepStage1">
-        <rdf:type rdf:resource="https://w3id.org/pghdprovo/SleepStage"/>
-        <hasContextualInfo rdf:resource="https://w3id.org/pghdprovo/Rating1"/>
-        <wasCollectedBy rdf:resource="https://w3id.org/pghdprovo/Patient1"/>
-        <deepsleepduration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">104</deepsleepduration>
-        <lightsleepduration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">205</lightsleepduration>
-        <remsleepduration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</remsleepduration>
-        <wakeupduration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</wakeupduration>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/pghdprovo/State1 -->
 
 
@@ -2273,15 +1385,6 @@ activity.</rdfs:comment>
             <rdf:Description rdf:about="https://w3id.org/pghdprovo/Application"/>
             <rdf:Description rdf:about="https://w3id.org/pghdprovo/ContextualInfo"/>
             <rdf:Description rdf:about="https://w3id.org/pghdprovo/PGHD"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/pghdprovo/ActivityLevel"/>
-            <rdf:Description rdf:about="https://w3id.org/pghdprovo/DailyActivity"/>
-            <rdf:Description rdf:about="https://w3id.org/pghdprovo/Sleep"/>
-            <rdf:Description rdf:about="https://w3id.org/pghdprovo/SleepStage"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
