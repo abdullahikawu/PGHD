@@ -1,0 +1,1786 @@
+<h2 id="crossreference" class="list">Cross-reference for PGHD-PROVO Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by PGHD-PROVO Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a></li>
+  <li><a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a></li>
+  <li><a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a></li>
+  <li><a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a></li>
+  <li><a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a></li>
+  <li><a href="#PatientRelative" title="https://w3id.org/pghdprovo/PatientRelative">Patient Relative</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a></li>
+  <li><a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a></li>
+  <li><a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a></li>
+  <li><a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a></li>
+  <li><a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a></li>
+  <li><a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a></li>
+  <li><a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">SoftwareAgent</a></li>
+  <li><a href="#State" title="https://w3id.org/pghdprovo/State">state</a></li>
+  <li><a href="#https://saref.etsi.org/saref4wear/User" title="https://saref.etsi.org/saref4wear/User">User</a></li>
+  <li><a href="#https://saref.etsi.org/saref4wear/Wearable" title="https://saref.etsi.org/saref4wear/Wearable">Wearable device</a></li>
+ </ul>
+ <div class="entity" id="http://www.w3.org/ns/prov#Activity">
+  <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Activity</p>
+  <div class="comment">
+   <span class="markdown">An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#endedAtTime" title="http://www.w3.org/ns/prov#endedAtTime">endedAtTime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#startedAtTime" title="http://www.w3.org/ns/prov#startedAtTime">startedAtTime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Agent">
+  <h3>Agent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Agent</p>
+  <div class="comment">
+   <span class="markdown">An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">SoftwareAgent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#actedOnBehalfOf" title="http://www.w3.org/ns/prov#actedOnBehalfOf">actedOnBehalfOf</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#actedOnBehalfOf" title="http://www.w3.org/ns/prov#actedOnBehalfOf">actedOnBehalfOf</a> <sup class="type-op" title="object property">op</sup>, <a href="#wasCollectedBy" title="https://w3id.org/pghdprovo/wasCollectedBy">was collected by</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Application">
+  <h3>Application<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Application</p>
+  <div class="comment">
+   <span class="markdown">A software application is a software that can be directly executed by some processing unit.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#appName" title="https://w3id.org/pghdprovo/appName">app name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#application1" title="https://w3id.org/pghdprovo/application1">application1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>, <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContextualInfo">
+  <h3>contextual information<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/ContextualInfo</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#locationOfPatient" title="https://w3id.org/pghdprovo/locationOfPatient">location of patient</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasContextualInfo" title="https://w3id.org/pghdprovo/hasContextualInfo">Contain Contextual Info</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ContextualDataInfo1" title="https://w3id.org/pghdprovo/ContextualDataInfo1">Contextual Data Info1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://saref.etsi.org/core/Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://saref.etsi.org/core/Device</p>
+  <div class="comment">
+   <span class="markdown">A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://saref.etsi.org/core/">https://saref.etsi.org/core/</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#https://saref.etsi.org/saref4wear/Wearable" title="https://saref.etsi.org/saref4wear/Wearable">Wearable device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#deviceModel" title="https://w3id.org/pghdprovo/deviceModel">device model</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#deviceName" title="https://w3id.org/pghdprovo/deviceName">device name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>, <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Entity">
+  <h3>Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Entity</p>
+  <div class="comment">
+   <span class="markdown">An entity is a physical, digital, conceptual, or other kind of thing with some fixed aspects; entities may be real or imaginary. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>, <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#generatedAtTime" title="http://www.w3.org/ns/prov#generatedAtTime">generatedAtTime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasDerivedFrom" title="http://www.w3.org/ns/prov#wasDerivedFrom">wasDerivedFrom</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasDerivedFrom" title="http://www.w3.org/ns/prov#wasDerivedFrom">wasDerivedFrom</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Organization">
+  <h3>Organization<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Organization</p>
+  <div class="comment">
+   <span class="markdown">An organization is a social or legal institution such as a company, society, etc.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#orgAddress" title="https://w3id.org/pghdprovo/orgAddress">organization address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#orgEmail" title="https://w3id.org/pghdprovo/orgEmail">organization email</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#orgId" title="https://w3id.org/pghdprovo/orgId">organization id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#orgName" title="https://w3id.org/pghdprovo/orgName">organization name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isAStaffOf" title="https://w3id.org/pghdprovo/isAStaffOf">is a staff of</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Organisation1" title="https://w3id.org/pghdprovo/Organisation1">Organisation1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">SoftwareAgent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Patient">
+  <h3>Patient<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Patient</p>
+  <div class="comment">
+   <span class="markdown">A person who receives medical attention, care, or treatment, or who is registered with medical professional or institution with the purpose to receive medical care when necessary.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://purl.obolibrary.org/obo/NCIT_C16960
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#wasAuthorizedBy" title="https://w3id.org/pghdprovo/wasAuthorizedBy">was authorized by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Patient1" title="https://w3id.org/pghdprovo/Patient1">Patient1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#PatientRelative" title="https://w3id.org/pghdprovo/PatientRelative">Patient Relative</a> <sup class="type-c" title="class">c</sup>, <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PatientRelative">
+  <h3>Patient Relative<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/PatientRelative</p>
+  <div class="comment">
+   <span class="markdown">A Patient relative or friend who helps to collect or transmit data.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#relationship" title="https://w3id.org/pghdprovo/relationship">relationship</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#PatientRelative1" title="https://w3id.org/pghdprovo/PatientRelative1">Patient Relative1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a> <sup class="type-c" title="class">c</sup>, <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#Person">
+  <h3>Person<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#Person</p>
+  <div class="comment">
+   <span class="markdown">Person agents are people.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a> <sup class="type-c" title="class">c</sup>, <a href="#PatientRelative" title="https://w3id.org/pghdprovo/PatientRelative">Patient Relative</a> <sup class="type-c" title="class">c</sup>, <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>, <a href="#https://saref.etsi.org/saref4wear/User" title="https://saref.etsi.org/saref4wear/User">User</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#address" title="https://w3id.org/pghdprovo/address">address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#phoneNumber" title="https://w3id.org/pghdprovo/phoneNumber">phone number</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#userid" title="https://w3id.org/pghdprovo/userid">user id</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#SoftwareAgent" title="http://www.w3.org/ns/prov#SoftwareAgent">SoftwareAgent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PGHD">
+  <h3>PGHD<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/PGHD</p>
+  <div class="comment">
+   <span class="markdown">Patient Generated Health Data (PGHD) a term referring to data that patients (or their caregivers) collect from home or any location outside the clinical environment.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasContextualInfo" title="https://w3id.org/pghdprovo/hasContextualInfo">Contain Contextual Info</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataSource" title="https://w3id.org/pghdprovo/dataSource">data source</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wasCollectedBy" title="https://w3id.org/pghdprovo/wasCollectedBy">was collected by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#BloodPressure1" title="https://w3id.org/pghdprovo/BloodPressure1">Blood Pressure1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PGHDRequest">
+  <h3>PGHD Request<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/PGHDRequest</p>
+  <div class="comment">
+   <span class="markdown">A request made by a practitioner to obtain patient health data generated by wearable device or software application.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#PGHDRequestedBy" title="https://w3id.org/pghdprovo/PGHDRequestedBy">PGHD requested by</a> <sup class="type-op" title="object property">op</sup>, <a href="#requestId" title="https://w3id.org/pghdprovo/requestId">activity id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#description" title="https://w3id.org/pghdprovo/description">description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#wasAuthorizedBy" title="https://w3id.org/pghdprovo/wasAuthorizedBy">was authorized by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#PGHDRequest1" title="https://w3id.org/pghdprovo/PGHDRequest1">P G H D Request1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Practitioner">
+  <h3>Practitioner<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Practitioner</p>
+  <div class="comment">
+   <span class="markdown">A person professionally engaged medical practice who is appointed to a post or duties. [Definition Source: NCI]</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://purl.obolibrary.org/obo/NCIT_C51846
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#isAStaffOf" title="https://w3id.org/pghdprovo/isAStaffOf">is a staff of</a> <sup class="type-op" title="object property">op</sup>, <a href="#role" title="https://w3id.org/pghdprovo/role">role</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#PGHDRequestedBy" title="https://w3id.org/pghdprovo/PGHDRequestedBy">PGHD requested by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Practitioner1" title="https://w3id.org/pghdprovo/Practitioner1">Practitioner1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a> <sup class="type-c" title="class">c</sup>, <a href="#PatientRelative" title="https://w3id.org/pghdprovo/PatientRelative">Patient Relative</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Programme">
+  <h3>programme<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Programme</p>
+  <div class="comment">
+   <span class="markdown">Programme which is associated with the PGHD captured</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#programmeName" title="https://w3id.org/pghdprovo/programmeName">programme name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Programme1" title="https://w3id.org/pghdprovo/Programme1">Programme1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Protocol">
+  <h3>protocol<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Protocol</p>
+  <div class="comment">
+   <span class="markdown">Protocol related to the captured PGHD such as Location of measurement otherwise known as body site, cuff link size, etc</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#bodySite" title="https://w3id.org/pghdprovo/bodySite">Body Site</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Protocol1" title="https://w3id.org/pghdprovo/Protocol1">Protocol1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>, <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Rating">
+  <h3>rating<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/Rating</p>
+  <div class="comment">
+   <span class="markdown">A rating associated to the quality of PGHD usually specified by scores and as given from a recognised body like MEND</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ratingOrgName" title="https://w3id.org/pghdprovo/ratingOrgName">rating organization name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#ratingScore" title="https://w3id.org/pghdprovo/ratingScore">rating score</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Rating1" title="https://w3id.org/pghdprovo/Rating1">Rating1</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#SoftwareAgent">
+  <h3>SoftwareAgent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#SoftwareAgent</p>
+  <div class="comment">
+   <span class="markdown">A software agent is running software.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="State">
+  <h3>state<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/State</p>
+  <div class="comment">
+   <span class="markdown">This refers to the state of the patient at the time of the PGHD capture e.g posture or position, excercise state</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#exerciseState" title="https://w3id.org/pghdprovo/exerciseState">exercise state</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#posture" title="https://w3id.org/pghdprovo/posture">posture</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#State1" title="https://w3id.org/pghdprovo/State1">State1</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#State2" title="https://w3id.org/pghdprovo/State2">State2</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>, <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>, <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://saref.etsi.org/saref4wear/User">
+  <h3>User<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://saref.etsi.org/saref4wear/User</p>
+  <div class="comment">
+   <span class="markdown">A user is an entity using a wearable.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://saref.etsi.org/saref4wear/Wearable">
+  <h3>Wearable device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://saref.etsi.org/saref4wear/Wearable</p>
+  <div class="comment">
+   <span class="markdown">A wearable device is a device that is intended to be located near, on or in an organism.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3.org/ns/prov#actedOnBehalfOf" title="http://www.w3.org/ns/prov#actedOnBehalfOf">actedOnBehalfOf</a></li>
+  <li><a href="#hasContextualInfo" title="https://w3id.org/pghdprovo/hasContextualInfo">Contain Contextual Info</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated"> <span>generated</span> </a></li>
+  <li><a href="#isAStaffOf" title="https://w3id.org/pghdprovo/isAStaffOf">is a staff of</a></li>
+  <li><a href="#PGHDRequestedBy" title="https://w3id.org/pghdprovo/PGHDRequestedBy">PGHD requested by</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a></li>
+  <li><a href="#wasAuthorizedBy" title="https://w3id.org/pghdprovo/wasAuthorizedBy">was authorized by</a></li>
+  <li><a href="#wasCollectedBy" title="https://w3id.org/pghdprovo/wasCollectedBy">was collected by</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">wasAssociatedWith</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasAttributedTo" title="http://www.w3.org/ns/prov#wasAttributedTo">wasAttributedTo</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasDerivedFrom" title="http://www.w3.org/ns/prov#wasDerivedFrom">wasDerivedFrom</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a></li>
+ </ul>
+ <div class="entity" id="http://www.w3.org/ns/prov#actedOnBehalfOf">
+  <h3>actedOnBehalfOf<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#actedOnBehalfOf</p>
+  <div class="comment">
+   <span class="markdown">An object property to express the accountability of an agent towards another agent. The subordinate agent acted on behalf of the responsible agent in an actual activity. </span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasContextualInfo">
+  <h3>Contain Contextual Info<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/hasContextualInfo</p>
+  <div class="comment">
+   <span class="markdown">Has some contextual information associated to the PGHD</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#generated">
+  <h3>generated<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#generated</p>
+  <div class="description">
+   <dl>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isAStaffOf">
+  <h3>is a staff of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/isAStaffOf</p>
+  <div class="comment">
+   <span class="markdown">Shows the institution a person works.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="PGHDRequestedBy">
+  <h3>PGHD requested by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/PGHDRequestedBy</p>
+  <div class="comment">
+   <span class="markdown">A object property that declares the prov:agent responsible for the initializing a request for acquiring of patient Health data.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#used">
+  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#used</p>
+  <div class="comment">
+   <span class="markdown">A prov:Entity that was used by this prov:Activity. For example, :baking prov:used :spoon, :egg, :oven .</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="wasAuthorizedBy">
+  <h3>was authorized by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wasAuthorizedBy</p>
+  <div class="comment">
+   <span class="markdown">A person who grant access to data requested.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Patient" title="https://w3id.org/pghdprovo/Patient">Patient</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="wasCollectedBy">
+  <h3>was collected by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/wasCollectedBy</p>
+  <div class="comment">
+   <span class="markdown">Ascribing a person engaged in the retrieval of health data. This could be the patient themself, a caregiver, a relative, or a friend.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
+  <h3>wasAssociatedWith<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">An prov:Agent that had some (unspecified) responsibility for the occurrence of this prov:Activity.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAttributedTo">
+  <h3>wasAttributedTo<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAttributedTo</p>
+  <div class="comment">
+   <span class="markdown">Attribution is the ascribing of an entity to an agent.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Attribution is the ascribing of an entity to an agent.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Agent" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasDerivedFrom">
+  <h3>wasDerivedFrom<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasDerivedFrom</p>
+  <div class="comment">
+   <span class="markdown">The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasGeneratedBy">
+  <h3>wasGeneratedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasGeneratedBy</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#wasInfluencedBy" target="_blank" title="http://www.w3.org/ns/prov#wasInfluencedBy">was Influenced By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#requestId" title="https://w3id.org/pghdprovo/requestId">activity id</a></li>
+  <li><a href="#address" title="https://w3id.org/pghdprovo/address">address</a></li>
+  <li><a href="#appName" title="https://w3id.org/pghdprovo/appName">app name</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/birthday" title="http://xmlns.com/foaf/0.1/birthday">birthday</a></li>
+  <li><a href="#bodySite" title="https://w3id.org/pghdprovo/bodySite">Body Site</a></li>
+  <li><a href="#dataSource" title="https://w3id.org/pghdprovo/dataSource">data source</a></li>
+  <li><a href="#description" title="https://w3id.org/pghdprovo/description">description</a></li>
+  <li><a href="#deviceModel" title="https://w3id.org/pghdprovo/deviceModel">device model</a></li>
+  <li><a href="#deviceName" title="https://w3id.org/pghdprovo/deviceName">device name</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#endedAtTime" title="http://www.w3.org/ns/prov#endedAtTime">endedAtTime</a></li>
+  <li><a href="#exerciseState" title="https://w3id.org/pghdprovo/exerciseState">exercise state</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/gender" title="http://xmlns.com/foaf/0.1/gender">gender</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#generatedAtTime" title="http://www.w3.org/ns/prov#generatedAtTime">generatedAtTime</a></li>
+  <li><a href="#http://xmlns.com/foaf/0.1/givenName" title="http://xmlns.com/foaf/0.1/givenName">Given name</a></li>
+  <li><a href="#locationOfPatient" title="https://w3id.org/pghdprovo/locationOfPatient">location of patient</a></li>
+  <li><a href="#orgAddress" title="https://w3id.org/pghdprovo/orgAddress">organization address</a></li>
+  <li><a href="#orgEmail" title="https://w3id.org/pghdprovo/orgEmail">organization email</a></li>
+  <li><a href="#orgId" title="https://w3id.org/pghdprovo/orgId">organization id</a></li>
+  <li><a href="#orgName" title="https://w3id.org/pghdprovo/orgName">organization name</a></li>
+  <li><a href="#phoneNumber" title="https://w3id.org/pghdprovo/phoneNumber">phone number</a></li>
+  <li><a href="#posture" title="https://w3id.org/pghdprovo/posture">posture</a></li>
+  <li><a href="#programmeName" title="https://w3id.org/pghdprovo/programmeName">programme name</a></li>
+  <li><a href="#ratingOrgName" title="https://w3id.org/pghdprovo/ratingOrgName">rating organization name</a></li>
+  <li><a href="#ratingScore" title="https://w3id.org/pghdprovo/ratingScore">rating score</a></li>
+  <li><a href="#relationship" title="https://w3id.org/pghdprovo/relationship">relationship</a></li>
+  <li><a href="#role" title="https://w3id.org/pghdprovo/role">role</a></li>
+  <li><a href="#http://www.w3.org/ns/prov#startedAtTime" title="http://www.w3.org/ns/prov#startedAtTime">startedAtTime</a></li>
+  <li><a href="#userid" title="https://w3id.org/pghdprovo/userid">user id</a></li>
+ </ul>
+ <div class="entity" id="requestId">
+  <h3>activity id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/requestId</p>
+  <div class="comment">
+   <span class="markdown">Log id for an activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="address">
+  <h3>address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/address</p>
+  <div class="comment">
+   <span class="markdown">A standardized representation of the location of a person, business, building, or organization.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    http://purl.obolibrary.org/obo/NCIT_C25407
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appName">
+  <h3>app name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/appName</p>
+  <div class="comment">
+   <span class="markdown">The name of the software application utilised by a patient and practitioner.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Application" title="https://w3id.org/pghdprovo/Application">Application</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/birthday">
+  <h3>birthday<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/birthday</p>
+  <div class="comment">
+   <span class="markdown">The birthday of this Agent, represented in mm-dd string form, eg. '12-31'.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    unstable
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://xmlns.com/foaf/0.1/age" target="_blank" title="http://xmlns.com/foaf/0.1/age">age</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="bodySite">
+  <h3>Body Site<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/bodySite</p>
+  <div class="comment">
+   <span class="markdown">The part of the body where data is collected or which a device was placed to collect health data.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Protocol" title="https://w3id.org/pghdprovo/Protocol">protocol</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="dataSource">
+  <h3>data source<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/dataSource</p>
+  <div class="comment">
+   <span class="markdown">An entity that produce a digital data.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHD" title="https://w3id.org/pghdprovo/PGHD">PGHD</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="description">
+  <h3>description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/description</p>
+  <div class="comment">
+   <span class="markdown">Provide more information about an activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PGHDRequest" title="https://w3id.org/pghdprovo/PGHDRequest">PGHD Request</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceModel">
+  <h3>device model<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/deviceModel</p>
+  <div class="comment">
+   <span class="markdown">A unique number or name given by a device manufacturer to devices that corresponds to a certain characteristics.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="deviceName">
+  <h3>device name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/deviceName</p>
+  <div class="comment">
+   <span class="markdown">A name for a device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://saref.etsi.org/core/Device" title="https://saref.etsi.org/core/Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#endedAtTime">
+  <h3>endedAtTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#endedAtTime</p>
+  <div class="comment">
+   <span class="markdown">The time at which an activity ended. See also prov:startedAtTime.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="exerciseState">
+  <h3>exercise state<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/exerciseState</p>
+  <div class="comment">
+   <span class="markdown">exercise state.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/gender">
+  <h3>gender<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/gender</p>
+  <div class="comment">
+   <span class="markdown">The gender of this Agent (typically but not necessarily 'male' or 'female').</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    testing
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#generatedAtTime">
+  <h3>generatedAtTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#generatedAtTime</p>
+  <div class="comment">
+   <span class="markdown">The time at which an entity was completely created and is available for use.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Entity" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://xmlns.com/foaf/0.1/givenName">
+  <h3>Given name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://xmlns.com/foaf/0.1/givenName</p>
+  <div class="comment">
+   <span class="markdown">The given name of some person.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://xmlns.com/foaf/0.1/">http://xmlns.com/foaf/0.1/</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Term status
+   </dt>
+   <dd>
+    testing
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="locationOfPatient">
+  <h3>location of patient<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/locationOfPatient</p>
+  <div class="comment">
+   <span class="markdown">Location of a patient during data collection.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ContextualInfo" title="https://w3id.org/pghdprovo/ContextualInfo">contextual information</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="orgAddress">
+  <h3>organization address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/orgAddress</p>
+  <div class="comment">
+   <span class="markdown">Location of organisation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="orgEmail">
+  <h3>organization email<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/orgEmail</p>
+  <div class="comment">
+   <span class="markdown">Organization email address.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="orgId">
+  <h3>organization id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/orgId</p>
+  <div class="comment">
+   <span class="markdown">An identifier for an organization.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="orgName">
+  <h3>organization name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/orgName</p>
+  <div class="comment">
+   <span class="markdown">The name of the organization where a practitioner belongs.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Organization" title="http://www.w3.org/ns/prov#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="phoneNumber">
+  <h3>phone number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/phoneNumber</p>
+  <div class="comment">
+   <span class="markdown">Phone contact number.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="posture">
+  <h3>posture<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/posture</p>
+  <div class="comment">
+   <span class="markdown">The body position of the patient during data collection.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#State" title="https://w3id.org/pghdprovo/State">state</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="programmeName">
+  <h3>programme name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/programmeName</p>
+  <div class="comment">
+   <span class="markdown">The treatment programme associated with the PGHD request.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Programme" title="https://w3id.org/pghdprovo/Programme">programme</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ratingOrgName">
+  <h3>rating organization name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/ratingOrgName</p>
+  <div class="comment">
+   <span class="markdown">Denotes the name of the organization that conducted the rating.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topDataProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topDataProperty">top Data Property</a> <sup class="type-dp" title="data property">dp</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ratingScore">
+  <h3>rating score<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/ratingScore</p>
+  <div class="comment">
+   <span class="markdown">The efficiency rating of an equipement or device by recognized body.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Rating" title="https://w3id.org/pghdprovo/Rating">rating</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="relationship">
+  <h3>relationship<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/relationship</p>
+  <div class="comment">
+   <span class="markdown">shows the relationship of a caregiver, friend, or relative to a patient.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PatientRelative" title="https://w3id.org/pghdprovo/PatientRelative">Patient Relative</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="role">
+  <h3>role<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/role</p>
+  <div class="comment">
+   <span class="markdown">position or function within an organization</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Practitioner" title="https://w3id.org/pghdprovo/Practitioner">Practitioner</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#startedAtTime">
+  <h3>startedAtTime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#startedAtTime</p>
+  <div class="comment">
+   <span class="markdown">The time at which an activity started. See also prov:endedAtTime.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov-o#">http://www.w3.org/ns/prov-o#</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Activity" title="http://www.w3.org/ns/prov#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="userid">
+  <h3>user id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/pghdprovo/userid</p>
+  <div class="comment">
+   <span class="markdown">User identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#Person" title="http://www.w3.org/ns/prov#Person">Person</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
